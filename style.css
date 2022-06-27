@@ -42,7 +42,8 @@ header {
     justify-content: space-between;
 }
 
-.nav-list a {
+.nav-list a,
+.nav-list-opened a {
     text-decoration: none;
     color: #000;
     font-family: 'Heebo';
@@ -252,7 +253,7 @@ footer .networks {
     top: 0;
 }
 
-#menu-hamburger:checked~nav.nav-list {
+.nav-list-opened {
     display: flex;
     flex-direction: column;
     justify-content: center;
