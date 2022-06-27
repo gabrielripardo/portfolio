@@ -34,7 +34,7 @@ header {
 .menu-mobile {
     display: none;
     cursor: pointer;
-    border: #f00 solid 1px;
+    height: 100%;
 }
 
 .hamburger {
@@ -43,6 +43,7 @@ header {
     width: 30px;
     height: 2px;
     top: 12px;
+    transition: .5s ease-in-out;
 }
 
 .hamburger:before,
@@ -52,6 +53,7 @@ header {
     width: 100%;
     height: 100%;
     position: absolute;
+    transition: .5s ease-in-out;
 }
 
 .hamburger:before {
@@ -60,6 +62,24 @@ header {
 
 .hamburger:after {
     top: 10px;
+}
+
+/* #menu-hamburger {
+    display: none;
+} */
+
+#menu-hamburger:checked ~ label .hamburger {
+    transform: rotate(45deg);
+}
+
+#menu-hamburger:checked ~ label .hamburger:before {
+    transform: rotate(90deg);
+    top: 0;
+}
+
+#menu-hamburger:checked ~ label .hamburger:after {
+    transform: rotate(90deg);
+    top: 0;
 }
 
 .nav-list {
