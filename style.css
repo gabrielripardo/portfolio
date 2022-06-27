@@ -31,55 +31,9 @@ header {
     border-bottom: rgb(227, 227, 227, 1) solid 1px;
 }
 
-.menu-mobile {
-    display: none;
-    cursor: pointer;
-    height: 100%;
-}
-
-.hamburger {
-    display: block;
-    background: #000;
-    width: 30px;
-    height: 2px;
-    top: 12px;
-    transition: .5s ease-in-out;
-}
-
-.hamburger:before,
-.hamburger:after {
-    content: '';
-    background: #000;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    transition: .5s ease-in-out;
-}
-
-.hamburger:before {
-    top: -10px;
-}
-
-.hamburger:after {
-    top: 10px;
-}
-
-/* #menu-hamburger {
-    display: none;
-} */
-
-#menu-hamburger:checked ~ label .hamburger {
-    transform: rotate(45deg);
-}
-
-#menu-hamburger:checked ~ label .hamburger:before {
-    transform: rotate(90deg);
-    top: 0;
-}
-
-#menu-hamburger:checked ~ label .hamburger:after {
-    transform: rotate(90deg);
-    top: 0;
+#menu {
+    display: flex;
+    justify-content: space-between;
 }
 
 .nav-list {
@@ -247,12 +201,84 @@ footer .networks {
     align-items: center;
 }
 
+.menu-btn {
+    display: none;
+    cursor: pointer;
+    height: 100%;
+}
+
+.hamburger {
+    display: block;
+    background: #000;
+    width: 30px;
+    height: 2px;
+    top: 12px;
+    transition: .5s ease-in-out;
+}
+
+.hamburger:before,
+.hamburger:after {
+    content: '';
+    background: #000;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: .5s ease-in-out;
+}
+
+.hamburger:before {
+    top: -10px;
+}
+
+.hamburger:after {
+    top: 10px;
+}
+
+#menu-hamburger {
+    display: none;
+}
+
+#menu-hamburger:checked~label .hamburger {
+    transform: rotate(45deg);
+}
+
+#menu-hamburger:checked~label .hamburger:before {
+    transform: rotate(90deg);
+    top: 0;
+}
+
+#menu-hamburger:checked~label .hamburger:after {
+    transform: rotate(90deg);
+    top: 0;
+}
+
+#menu-hamburger:checked~nav.nav-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 18px;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: large;
+}
+
+#label-menu {
+    display: none;
+}
+
 @media only screen and (max-width: 1140px) {
-    .menu {
+    .nav-list {
         display: none;
     }
 
-    .menu-mobile {
+    #label-menu {
+        display: block;
+    }
+
+    .menu-btn {
         display: block;
     }
 }
