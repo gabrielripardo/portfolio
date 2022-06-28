@@ -79,11 +79,16 @@ section#introduce {
 }
 
 .resume .description {
-    margin-bottom: 20px
+    margin-bottom: 20px;
 }
 
 .avatar {
     padding: 20px;
+}
+
+.avatar-image {
+    border-radius: 50%;
+    animation: go-back 1.5s infinite alternate;
 }
 
 section#skills {
@@ -190,7 +195,6 @@ footer .networks {
     box-shadow: #ccc 1px 1px 3px;
     border-radius: 3px;
     font-size: 0.9rem;
-
 }
 
 .input-contact:focus {
@@ -311,5 +315,15 @@ footer .networks {
 
     .menu-btn {
         display: block;
+    }
+}
+
+@keyframes go-back {
+    from {
+        transform: translateY(-20%);
+    }
+
+    to {
+        transform: translateY(5%);
     }
 }
