@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500&display=swap');
 
+:root {
+    --color-default: #0070f3;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -14,6 +18,11 @@ html {
 
 ul {
     list-style-type: none;
+}
+
+a {
+    color: var(--color-default);
+    text-decoration: none;
 }
 
 header,
@@ -144,11 +153,15 @@ footer .networks {
 }
 
 .linkedin {
-    background-color: #0070f3;
+    background-color: var(--color-default);
 }
 
 .github {
     background-color: brown;
+}
+
+#contact {
+    margin: 40px 0 70px 0;
 }
 
 #contact,
@@ -157,7 +170,6 @@ footer .networks {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10px;
 }
 
 .input-contact {
@@ -172,7 +184,7 @@ footer .networks {
 
 .input-contact:focus {
     outline: none;
-    border: #0070f3 solid 1px;
+    border: var(--color-default) solid 1px;
 }
 
 .form-contact {
@@ -206,6 +218,7 @@ footer .networks {
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+    row-gap: 8px;
 }
 
 .menu-btn {
