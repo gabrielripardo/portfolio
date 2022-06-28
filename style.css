@@ -1,5 +1,6 @@
 :root {
     --color-default: #0070f3;
+    --color-gray: #fafafa;
 }
 
 @font-face {
@@ -31,8 +32,16 @@ a {
     text-decoration: none;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-gray);
+}
+
 header,
-main,
+section,
 footer {
     margin: auto;
     max-width: 1120px;
@@ -44,6 +53,7 @@ header {
     justify-content: space-between;
     padding: 25px 15px;
     border-bottom: rgb(227, 227, 227, 1) solid 1px;
+    background-color: #fff;
 }
 
 .logo {
@@ -96,6 +106,7 @@ section#introduce {
 
 section#skills {
     display: flex;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
