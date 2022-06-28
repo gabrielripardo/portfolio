@@ -2,6 +2,14 @@
     --color-default: #0070f3;
 }
 
+@font-face {
+    font-family: 'pacfontregular';
+    src: url('fonts/pacman/pac-font-webfont.woff') format('woff2'),
+        url('fonts/pacman/pac-font-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -36,6 +44,11 @@ header {
     justify-content: space-between;
     padding: 25px 15px;
     border-bottom: rgb(227, 227, 227, 1) solid 1px;
+}
+
+.logo {
+    font-size: large;
+    font-family: 'pacfontregular';
 }
 
 #menu {
