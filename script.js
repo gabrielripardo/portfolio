@@ -16,20 +16,11 @@ function clickHamburger() {
 }
 
 function showMenu() {
-    console.log('showMenu')
-    header.style.transition = "0.5s";
     header.style.height = "100vh"
-    navList.className = 'nav-list-opened'
 }
 
 function hideMenu() {
-    console.log('hideMenu')
-    header.style.height = "fit-content";
-    navList.className = 'nav-list'
-}
-
-function openPage() {
-    console.log("abrindo página..")
+    header.style.height = "80px";
 }
 
 function goToSection() {
