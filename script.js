@@ -17,6 +17,7 @@ function clickHamburger() {
 
 function showMenu() {
     console.log('showMenu')
+    header.style.transition = "0.5s";
     header.style.height = "100vh"
     navList.className = 'nav-list-opened'
 }
