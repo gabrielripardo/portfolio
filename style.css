@@ -98,13 +98,13 @@ section#introduce {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 120px 20px 0 40px;
+    padding: 120px 20px 0;
 }
 
 .resume .description {
     max-width: 600px;
     margin-bottom: 20px;
-    text-align: left;
+    text-align: justify;
 }
 
 .avatar {
