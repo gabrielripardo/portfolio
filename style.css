@@ -321,16 +321,6 @@ footer .networks {
     display: none;
 }
 
-@keyframes animate-menu {
-    from {
-        transform: translateY(0%);
-    }
-
-    to {
-        transform: translateY(100%);
-    }
-}
-
 @keyframes go-back {
     from {
         transform: translateY(-5%);
