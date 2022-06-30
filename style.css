@@ -219,6 +219,7 @@ footer .networks {
     box-shadow: #ccc 1px 1px 3px;
     border-radius: 3px;
     font-size: 0.9rem;
+    resize: none;
 }
 
 .input-contact:focus {
@@ -242,6 +243,11 @@ footer .networks {
     border: none;
     border-radius: 5px;
     text-decoration: none;
+    transition: .3s ease-in-out;
+}
+
+.btn-default:hover {
+    opacity: .8;
 }
 
 .list-skils {
