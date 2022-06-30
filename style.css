@@ -321,6 +321,65 @@ footer .networks {
     display: none;
 }
 
+.swiper {
+    max-width: 1030px;
+    width: 90vw;
+    height: 300px;
+    z-index: 0;
+}
+
+.swiper-slide {
+    display: flex;
+    padding: 20px 70px;
+    /* border: #038cf2 solid 2px; */
+    gap: 30px;
+}
+
+.swiper-slide-description .github {
+    background-color: #000;
+    transition: .2s ease-in;
+    width: 25px;
+    height: 25px;
+    padding: 15px;
+}
+
+.swiper-slide-description .github img {
+    width: 20px;
+    height: 20px;
+}
+
+.swiper-slide-description .github:hover {
+    opacity: 0.7;
+}
+
+.swiper-slide-demo {
+    display: flex;
+    flex-direction: column;
+}
+
+.swiper-slide-description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 30px;
+}
+
+.swiper-slide-demo {
+    display: flex;
+    flex-direction: column;
+}
+
+.swiper-slide-demo a {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.project-screen {
+    width: 200px;
+    margin: 20px 0 10px 5px;
+}
+
 @keyframes go-back {
     from {
         transform: translateY(-5%);

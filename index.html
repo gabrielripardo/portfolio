@@ -6,9 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gabriel | Portólio</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href='https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500&display=swap'>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
     <script src="./script.js" defer></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -54,14 +56,52 @@
         </section>
         <section id="projects">
             <h2>Projetos</h2>
-            <ul>
+
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="swiper-slide-demo">
+                            <h3>Mata Mosquito</h3>
+                            <img class="project-screen" src="./img/mata-mosquito_screenshot.png"
+                                alt="screenshot do projeto">
+                            <a href="#" target="_blank">Abrir Site</a>
+                        </div>
+                        <div class="swiper-slide-description">
+                            <a class="github" href="https://github.com/gabrielripardo/game-mosquito" target="_blank"
+                                title="repositório do projeto">
+                                <img src="/assets/icons/github.svg" alt="linkedin logo" width="25" height="25" />
+                            </a>
+                            <p>
+                                Game que tem como objetivo capturar o maior número possível de moscas utilizando o click
+                                do mouse.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    ...
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+
+            <!-- <ul>
                 <li><a href="https://github.com/gabrielripardo/urna-eletronica" target="_blank">Urna Eletrônica</a></li>
-                <li><a href="https://github.com/gabrielripardo/game-mosquito" target="_blank">Mata Mosquito</a></li>
                 <li><a href="https://github.com/gabrielripardo/covid" target="_blank">Analytics Covid-19</a></li>
                 <li><a href="https://github.com/gabrielripardo/starwars-app" target="_blank">Persons Star Wars</a></li>
                 <li><a href="https://github.com/gabrielripardo/references_web" target="_blank">Clone de sites
                         famosos</a></li>
-            </ul>
+            </ul> -->
         </section>
         <section id="skills">
             <h2>Principais Habilidades</h2>

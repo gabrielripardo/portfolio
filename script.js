@@ -5,6 +5,30 @@ let footer = document.getElementsByTagName("footer")[0];
 let hamburgerBtn = document.getElementById("menu-hamburger");
 let menu = document.getElementById("menu");
 let navList = document.getElementsByClassName("nav-list")[0]
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    // loop: true,
+    // autoplay: {
+    //     delay: 5000,
+    // },
+
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+        el: '.swiper-scrollbar',
+    },
+});
 
 function clickHamburger() {
     console.log('clicou');
