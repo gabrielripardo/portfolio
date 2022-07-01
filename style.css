@@ -51,9 +51,16 @@ header {
     justify-content: center;
     column-gap: 540px;
     padding: 25px 15px;
-    border-bottom: rgb(227, 227, 227, 1) solid 1px;
     background-color: #fff;
     transition: all .5s ease;
+}
+
+header:after {
+    content: '';
+    position: absolute;
+    width: 1120px;
+    top: 80px;
+    border-bottom: rgb(227, 227, 227, 1) solid 1px;
 }
 
 .menu-btn:hover header {
