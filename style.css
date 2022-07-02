@@ -15,7 +15,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Heebo', sans-serif;
+    font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', sans-serif;
     position: relative;
 }
 
@@ -37,6 +37,12 @@ ul {
 a {
     color: var(--color-default);
     text-decoration: none;
+}
+
+
+h2 {
+    font: 22px "-apple-system", "Heebo";
+    color: #34a297;
 }
 
 header {
@@ -108,6 +114,15 @@ section#introduce {
     padding: 120px 20px 0;
 }
 
+.description {
+    font-size: 'Heebo';
+}
+
+section#introduce h3 {
+    font: 19px "-apple-system", "Heebo";
+    color: #b7892b;
+}
+
 .resume .description {
     max-width: 600px;
     margin-bottom: 20px;
@@ -136,6 +151,7 @@ section#skills {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 40px
 }
 
 section#jobs {
@@ -143,7 +159,12 @@ section#jobs {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    row-gap: 10px;
+    row-gap: 40px;
+}
+
+section#jobs h3,
+h4 {
+    color: rgba(0, 0, 0, 0.65)
 }
 
 .cards {
@@ -217,6 +238,10 @@ footer .networks {
 
 .github {
     background-color: brown;
+}
+
+section#contact {
+    row-gap: 40px;
 }
 
 #contact,
