@@ -1,6 +1,7 @@
 :root {
     --color-default: #0070f3;
     --color-gray: #fafafa;
+    --color-shadow-default: #000
 }
 
 @font-face {
@@ -115,7 +116,18 @@ section#introduce {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 120px 20px 0;
+    padding: 40px 20px;
+    margin-top: 80px;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    border-radius: 0 0 10px 10px;
+    ;
+}
+
+section#projects,
+#skills,
+#jobs,
+#contact {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 .description {
