@@ -26,7 +26,6 @@ const swiper = new Swiper('.swiper', {
 });
 
 function clickHamburger() {
-    console.log('clicou');
     if (hamburgerBtn.checked) {
         showMenu()
     } else {
