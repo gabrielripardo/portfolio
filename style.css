@@ -58,7 +58,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    column-gap: 540px;
+    column-gap: 470px;
     padding: 25px 15px;
     background-color: #fff;
     transition: all .5s ease;
@@ -78,6 +78,10 @@ header:after {
     height: 200px;
     opacity: 1;
     transform: translateY(0);
+}
+
+main {
+    width: 1120px;
 }
 
 section {
@@ -540,6 +544,10 @@ section#contact {
 
     header:after {
         border-bottom: none;
+    }
+
+    main {
+        width: 100%;
     }
 }
 
