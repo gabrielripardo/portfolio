@@ -69,7 +69,8 @@ header {
     box-shadow: rgba(0, 0, 0, 0.16) -0.4px .1px 4px;
 }
 
-main {
+main,
+footer {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
@@ -101,6 +102,7 @@ section {
     font-weight: 100;
     font-size: large;
     font-family: 'pacfontregular';
+    margin-left: 10px;
 }
 
 .nav-list {
@@ -145,7 +147,7 @@ section {
 }
 
 section#introduce {
-    width: 990px;
+    max-width: 990px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -257,7 +259,6 @@ footer {
     align-items: center;
     border-top: rgb(227, 227, 227, 1) solid 1px;
     padding: 15px;
-    margin-top: 80px
 }
 
 footer .networks {
