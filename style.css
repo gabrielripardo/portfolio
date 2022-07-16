@@ -26,10 +26,15 @@ html {
     scroll-padding-top: 80px;
 }
 
-body {
+body,
+main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+}
+
+body {
     background-color: var(--color-gray);
 }
 
@@ -60,16 +65,12 @@ header {
     align-items: center;
     padding: 25px 15px;
     transition: all .5s ease;
+    /* border-bottom: rgb(227, 227, 227, 1) solid 1px; */
+    box-shadow: rgba(0, 0, 0, 0.16) -0.4px .1px 4px;
 }
 
-header:after {
-    content: '';
-    position: absolute;
-    width: 1120px;
-    top: 80px;
-    left: 50%;
-    transform: translateX(-50%);
-    border-bottom: rgb(227, 227, 227, 1) solid 1px;
+main {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 .menu-btn:hover header {
@@ -144,22 +145,20 @@ section {
 }
 
 section#introduce {
+    width: 990px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 40px 20px;
-    margin-top: 80px;
+    margin-top: 100px;
     box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
-    border-radius: 0 0 10px 10px;
-    ;
+    border-radius: 20px 20px 10px 10px;
 }
 
-section#projects,
-#skills,
-#jobs,
-#contact {
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+section {
+    -webkit-box-shadow: 0px -3px 6px -3px rgba(136, 165, 191, 0.48);
+    box-shadow: 0px -3px 6px -3px rgba(136, 165, 191, 0.48);
 }
 
 .description {
@@ -511,11 +510,6 @@ section#contact {
         display: block;
     }
 
-    header {
-        justify-content: space-between;
-        column-gap: 0;
-    }
-
     #menu-hamburger:not(:checked)~nav {
         opacity: 0;
         transform: translateY(-120%);
@@ -537,12 +531,7 @@ section#contact {
     }
 
     header {
-        border-bottom: rgb(227, 227, 227, 1) solid 1px;
         align-items: flex-start;
-    }
-
-    header:after {
-        border-bottom: none;
     }
 
     main {
