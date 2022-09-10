@@ -6,13 +6,13 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta charSet="UTF-8" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Gabriel | Portólio</title>
       </Head>
 
-      <main className={styles.main}>
+      {/* <main className={styles.main}>
         <section className={styles.introduce}>
           <div className={styles.resume}>
             <h2 className={styles.titleSection} >Olá, sou o <strong>Gabriel Ripardo</strong></h2>
@@ -263,7 +263,7 @@ export default function Home() {
             <input type="submit" value="Enviar" className={styles.btnDefault + styles.btnDefault} />
           </form>
         </section>
-      </main>
+      </main> */}
 
       <footer className={styles.footer}>
         <div className={styles.networks}>
