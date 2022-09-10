@@ -6,8 +6,8 @@ $color-black: #000;
 
 @font-face {
   font-family: 'pacfontregular';
-  src: url('../assets/fonts/pacman/pac-font-webfont.woff') format('woff2'),
-    url('../assets/fonts/pacman/pac-font-webfont.woff') format('woff');
+  src: url('../public/assets/fonts/pacman/pac-font-webfont.woff') format('woff2'),
+    url('../public/assets/fonts/pacman/pac-font-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
