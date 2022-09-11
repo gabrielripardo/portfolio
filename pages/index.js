@@ -1,11 +1,21 @@
+import { useState } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.scss'
 
+const fullscreen = {
+  height: '100%'
+}
+
 export default function Home() {
+  const [btnHamburger, setBtnHamburger] = useState(false)
 
   const goToSection = () => {
     console.log('# indo para session');
+  }
+
+  const handleBtnHamburger = () => {
+    setBtnHamburger(!btnHamburger)
   }
 
   return (
@@ -19,12 +29,12 @@ export default function Home() {
         <link rel="stylesheet" href='https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500&display=swap' />
         <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
       </Head>
-      <header className={styles.header}>
+      <header className={styles.header} style={btnHamburger ? fullscreen : null}>
         <h1 className={styles.logo}>
           Portfólio
         </h1>
 
-        <input id={styles.menuHamgurger} type="checkbox" />
+        <input id={styles.menuHamburger} type="checkbox" checked={btnHamburger} readOnly />
 
         <nav className={styles.navList}>
           <a onClick={goToSection} href="#introduce"><span className={styles.namePage}>Home</span></a>
@@ -35,7 +45,7 @@ export default function Home() {
         </nav>
 
         <label id={styles.labelMenu} htmlFor={styles.menuHamgurger}>
-          <div className={styles.menuBtn}>
+          <div onClick={handleBtnHamburger} className={styles.menuBtn}>
             <span className={styles.hamburger}></span>
           </div>
         </label>
