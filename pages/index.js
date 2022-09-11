@@ -3,6 +3,11 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.scss'
 
 export default function Home() {
+
+  const goToSection = () => {
+    console.log('# indo para session');
+  }
+
   return (
     <div className={styles.content}>
       <Head>
@@ -22,11 +27,11 @@ export default function Home() {
         <input id={styles.menuHamgurger} type="checkbox" />
 
         <nav className={styles.navList}>
-          <a onClick="goToSection()" href="#introduce"><span className={styles.namePage}>Home</span></a>
-          <a onClick="goToSection()" href="#projects"><span className={styles.namePage}>Projetos</span></a>
-          <a onClick="goToSection()" href="#skills"><span className={styles.namePage}>Habilidades</span></a>
-          <a onClick="goToSection()" href="#jobs"><span className={styles.namePage}>Experiências</span></a>
-          <a onClick="goToSection()" href="#contact"><span className={styles.namePage}>Contato</span></a>
+          <a onClick={goToSection} href="#introduce"><span className={styles.namePage}>Home</span></a>
+          <a onClick={goToSection} href="#projects"><span className={styles.namePage}>Projetos</span></a>
+          <a onClick={goToSection} href="#skills"><span className={styles.namePage}>Habilidades</span></a>
+          <a onClick={goToSection} href="#jobs"><span className={styles.namePage}>Experiências</span></a>
+          <a onClick={goToSection} href="#contact"><span className={styles.namePage}>Contato</span></a>
         </nav>
 
         <label id={styles.labelMenu} htmlFor={styles.menuHamgurger}>
@@ -52,7 +57,7 @@ export default function Home() {
             <img className={styles.avatarImage} src="./assets/avatar-gabriel.png" alt="avatar do Gabriel" />
           </div>
         </section>
-        <section className={styles.projects}>
+        {/* <section className={styles.projects}>
           <h2 className={styles.titleSection} >Projetos</h2>
           <div className={styles.swiper} >
             <div className={styles.swiperWrapper} >
@@ -198,7 +203,7 @@ export default function Home() {
             <li><a href="https://github.com/gabrielripardo/covid" target="_blank">Analytics Covid-19</a></li>
             <li><a href="https://github.com/gabrielripardo/references_web/tree/master/instagram-login" target="_blank">Intagram login Clone </a></li>https://62bf079dde934f76ac24f1dc--glittering-churros-427c95.netlify.app/instagram-login/
           </ul>
-        </section>
+        </section> */}
         <section className={styles.skills}>
           <h2 className={styles.titleSection} >Principais Habilidades</h2>
           <div className={styles.listSkils} >
