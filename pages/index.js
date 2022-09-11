@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.scss'
+import Link from 'next/link'
 
 const fullscreen = {
   height: '100%'
@@ -37,11 +38,21 @@ export default function Home() {
         <input id={styles.menuHamburger} type="checkbox" checked={btnHamburger} readOnly />
 
         <nav className={styles.navList}>
-          <a onClick={goToSection} href="#introduce"><span className={styles.namePage}>Home</span></a>
-          <a onClick={goToSection} href="#projects"><span className={styles.namePage}>Projetos</span></a>
-          <a onClick={goToSection} href="#skills"><span className={styles.namePage}>Habilidades</span></a>
-          <a onClick={goToSection} href="#jobs"><span className={styles.namePage}>Experiências</span></a>
-          <a onClick={goToSection} href="#contact"><span className={styles.namePage}>Contato</span></a>
+          <Link href="#introduce">
+            <a onClick={goToSection}><span className={styles.namePage}>Home</span></a>
+          </Link>
+          <Link href="#projects">
+            <a onClick={goToSection}><span className={styles.namePage}>Projetos</span></a>
+          </Link>
+          <Link href="#skills">
+            <a onClick={goToSection} ><span className={styles.namePage}>Habilidades</span></a>
+          </Link>
+          <Link href="#jobs">
+            <a onClick={goToSection} ><span className={styles.namePage}>Experiências</span></a>
+          </Link>
+          <Link href="#contact">
+            <a onClick={goToSection} href=""><span className={styles.namePage}>Contato</span></a>
+          </Link>
         </nav>
 
         <label id={styles.labelMenu} htmlFor={styles.menuHamgurger}>
@@ -52,7 +63,7 @@ export default function Home() {
       </header>
 
       <main className={styles.main}>
-        <section className={styles.introduce}>
+        <section id="introduce" className={styles.introduce}>
           <div className={styles.resume}>
             <h2 className={styles.titleSection} >Olá, sou o <strong>Gabriel Ripardo</strong></h2>
             <h3>Desenvolvedor Front-end</h3>
@@ -67,7 +78,7 @@ export default function Home() {
             <img className={styles.avatarImage} src="./assets/avatar-gabriel.png" alt="avatar do Gabriel" />
           </div>
         </section>
-        {/* <section className={styles.projects}>
+        {/* <section id="projects" className={styles.projects}>
           <h2 className={styles.titleSection} >Projetos</h2>
           <div className={styles.swiper} >
             <div className={styles.swiperWrapper} >
@@ -214,7 +225,7 @@ export default function Home() {
             <li><a href="https://github.com/gabrielripardo/references_web/tree/master/instagram-login" target="_blank">Intagram login Clone </a></li>https://62bf079dde934f76ac24f1dc--glittering-churros-427c95.netlify.app/instagram-login/
           </ul>
         </section> */}
-        <section className={styles.skills}>
+        <section id="skills" className={styles.skills}>
           <h2 className={styles.titleSection} >Principais Habilidades</h2>
           <div className={styles.listSkils} >
             <a className={styles.skill} href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">
@@ -239,7 +250,7 @@ export default function Home() {
             </a>
           </div>
         </section>
-        <section className={styles.jobs}>
+        <section id="jobs" className={styles.jobs}>
           <h2>Experiências</h2>
           <div className={styles.cards} >
             <div className={styles.card} >
@@ -292,7 +303,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className={styles.contact}>
+        <section id="contact" className={styles.contact}>
           <h2>Entre em contato comigo</h2>
           <form className={styles.formContact} action="https://formspree.io/f/mqknoovk" method="POST" >
             <input type="text" name="name" className={styles.inputContact} placeholder="Digite seu nome" />
