@@ -4,7 +4,7 @@ import styles from '../styles/Home.module.scss'
 
 export default function Home() {
   return (
-    <div>
+    <div className={styles.content}>
       <Head>
         <meta charSet="UTF-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
@@ -14,8 +14,29 @@ export default function Home() {
         <link rel="stylesheet" href='https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500&display=swap' />
         <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
       </Head>
+      <header className={styles.header}>
+        <h1 className={styles.logo}>
+          Portfólio
+        </h1>
 
-      {/* <main className={styles.main}>
+        <input id={styles.menuHamgurger} type="checkbox" />
+
+        <nav className={styles.navList}>
+          <a onClick="goToSection()" href="#introduce"><span className={styles.namePage}>Home</span></a>
+          <a onClick="goToSection()" href="#projects"><span className={styles.namePage}>Projetos</span></a>
+          <a onClick="goToSection()" href="#skills"><span className={styles.namePage}>Habilidades</span></a>
+          <a onClick="goToSection()" href="#jobs"><span className={styles.namePage}>Experiências</span></a>
+          <a onClick="goToSection()" href="#contact"><span className={styles.namePage}>Contato</span></a>
+        </nav>
+
+        <label id={styles.labelMenu} htmlFor={styles.menuHamgurger}>
+          <div className={styles.menuBtn}>
+            <span className={styles.hamburger}></span>
+          </div>
+        </label>
+      </header>
+
+      <main className={styles.main}>
         <section className={styles.introduce}>
           <div className={styles.resume}>
             <h2 className={styles.titleSection} >Olá, sou o <strong>Gabriel Ripardo</strong></h2>
@@ -261,13 +282,12 @@ export default function Home() {
           <form className={styles.formContact} action="https://formspree.io/f/mqknoovk" method="POST" >
             <input type="text" name="name" className={styles.inputContact} placeholder="Digite seu nome" />
             <input type="email" name="email" className={styles.inputContact} placeholder="Digite seu e-mail" />
-            <textarea name="message" id="message" cols="30" rows="10" className={styles.inputContact}
+            <textarea name="message" id={styles.message} cols="30" rows="10" className={styles.inputContact}
               placeholder="Digite sua mensagem"></textarea>
             <input type="submit" value="Enviar" className={styles.btnDefault + styles.btnDefault} />
           </form>
         </section>
-      </main> */}
-
+      </main>
       <footer className={styles.footer}>
         <div className={styles.networks}>
           <a className={styles.linkedin} href="https://www.linkedin.com/in/gabriel-sena-317a8412a/">

@@ -42,7 +42,8 @@ a {
   }
 
   body {
-    color: white;
-    background: black;
+    color: #000;
+    /* color: white; */
+    /* background: black; */
   }
 }
