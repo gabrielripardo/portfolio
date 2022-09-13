@@ -78,9 +78,9 @@ export default function Home() {
             <img className={styles.avatarImage} src="./assets/avatar-gabriel.png" alt="avatar do Gabriel" />
           </div>
         </section>
-        {/* <section id="projects" className={styles.projects}>
+        <section id="projects" className={styles.projects}>
           <h2 className={styles.titleSection} >Projetos</h2>
-          <div className={styles.swiper} >
+          {/* <div className={styles.swiper} >
             <div className={styles.swiperWrapper} >
               <div className={styles.swiperWrapper} >
                 <h3>Urna eletrônica</h3>
@@ -223,8 +223,8 @@ export default function Home() {
           <ul>
             <li><a href="https://github.com/gabrielripardo/covid" target="_blank">Analytics Covid-19</a></li>
             <li><a href="https://github.com/gabrielripardo/references_web/tree/master/instagram-login" target="_blank">Intagram login Clone </a></li>https://62bf079dde934f76ac24f1dc--glittering-churros-427c95.netlify.app/instagram-login/
-          </ul>
-        </section> */}
+          </ul> */}
+        </section>
         <section id="skills" className={styles.skills}>
           <h2 className={styles.titleSection} >Principais Habilidades</h2>
           <div className={styles.listSkils} >

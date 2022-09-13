@@ -2,7 +2,8 @@
 
 $color-primary: #00a3ff;
 $color-low-black: #080c13;
-$color-black: #000;
+$color-black: #06090f;
+$color-white: #fafafa;
 
 @font-face {
   font-family: 'pacfontregular';
@@ -36,6 +37,8 @@ $color-black: #000;
   transition: all .5s ease;
   /* border-bottom: rgb(227, 227, 227, 1) solid 1px; */
   box-shadow: rgba(0, 0, 0, 0.16) -0.4px .1px 4px;
+  background-color: rgba(10, 10, 25, 0.7);
+  backdrop-filter: blur(24px);
 }
 
 .main,
@@ -63,7 +66,6 @@ $color-black: #000;
 .main,
 .footer {
   width: 100%;
-  background-color: var(--background-content);
 }
 
 .introduce,
@@ -77,13 +79,15 @@ $color-black: #000;
   justify-content: center;
   align-items: center;
   padding: 30px 20px 50px;
-  margin-top: 20px;
   -webkit-box-shadow: 0px -3px 6px -3px rgba(136, 165, 191, 0.48);
   box-shadow: 0px -3px 6px -3px rgba(136, 165, 191, 0.48);
 }
 
+.projects {
+  background-color: $color-low-black;
+}
+
 .logo {
-  color: $color-black;
   font-weight: 100;
   font-size: large;
   font-family: 'pacfontregular';
@@ -103,7 +107,7 @@ $color-black: #000;
 
 .namePage {
   text-decoration: none;
-  color: #000;
+  color: $color-white;
   font-family: 'Heebo';
   font-weight: 500;
   transition: all .5s ease;
@@ -138,9 +142,9 @@ $color-black: #000;
   justify-content: center;
   align-items: center;
   padding: 40px 20px;
-  margin-top: 100px;
+  margin-top: 80px;
   box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
-  border-radius: 20px 20px 10px 10px;
+  background-color: $color-black;
 }
 
 .description {
@@ -180,7 +184,8 @@ $color-black: #000;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 40px
+  gap: 40px;
+  background-color: $color-black;
 }
 
 .jobs {
@@ -189,11 +194,12 @@ $color-black: #000;
   justify-content: center;
   align-items: center;
   row-gap: 40px;
+  background-color: $color-low-black;
 }
 
 .jobs h3,
 .cardPeriod {
-  color: rgba(0, 0, 0, 0.65)
+  color: $color-white
 }
 
 .cards {
@@ -225,7 +231,6 @@ $color-black: #000;
 
 .cardHeader {
   text-decoration: none;
-  color: #000;
 }
 
 .cardTitle {
@@ -239,6 +244,7 @@ $color-black: #000;
   align-items: center;
   border-top: rgb(227, 227, 227, 1) solid 1px;
   padding: 15px;
+  background-color: $color-black;
 }
 
 .footer .networks {
@@ -268,6 +274,7 @@ $color-black: #000;
 
 .contact {
   row-gap: 40px;
+  background-color: $color-black;
 }
 
 .contact,
@@ -340,7 +347,7 @@ $color-black: #000;
 
 .hamburger {
   display: block;
-  background: #000;
+  background: $color-white;
   width: 30px;
   height: 2px;
   top: 14px;
@@ -350,7 +357,7 @@ $color-black: #000;
 .hamburger:before,
 .hamburger:after {
   content: '';
-  background: #000;
+  background: $color-white;
   width: 100%;
   height: 100%;
   position: absolute;
