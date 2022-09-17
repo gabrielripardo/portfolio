@@ -1,9 +1,9 @@
 @import "mixins";
 
-$color-primary: #00a3ff;
-$color-low-black: #080c13;
-$color-black: #06090f;
-$color-white: #fafafa;
+a$color-primary: var(--color-default);
+$color-low-black: var(--color-low-black);
+$color-black: var(--color-black);
+$color-white: var(--color-white);
 
 @font-face {
   font-family: 'pacfontregular';
@@ -83,7 +83,13 @@ $color-white: #fafafa;
   box-shadow: 0px -3px 6px -3px rgba(136, 165, 191, 0.48);
 }
 
+.gridLayout {
+  max-width: 1140px;
+  // margin: 0 auto;
+}
+
 .projects {
+  padding: 96px 48px;
   background-color: $color-low-black;
 }
 
@@ -553,3 +559,7 @@ $color-white: #fafafa;
     align-items: center;
   }
 }
+
+// @media only screen and (max-width: 1200px){
+
+// }
