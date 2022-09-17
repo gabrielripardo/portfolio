@@ -3,6 +3,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.scss'
 import Link from 'next/link'
+import Jobs from '../components/Jobs'
+import jobsList from '../pages/api/jobsList.json'
 
 const fullscreen = {
   height: '100%'
@@ -18,6 +20,7 @@ export default function Home() {
   const handleBtnHamburger = () => {
     setBtnHamburger(!btnHamburger)
   }
+  console.log('# listJobs ', typeof jobsList);
 
   return (
     <div className={styles.content}>
@@ -80,6 +83,9 @@ export default function Home() {
         </section>
         <section id="projects" className={styles.projects}>
           <h2 className={styles.titleSection} >Projetos</h2>
+          <div className={styles.gridLayout}>
+            <Jobs list={jobsList} />
+          </div>
           {/* <div className={styles.swiper} >
             <div className={styles.swiperWrapper} >
               <div className={styles.swiperWrapper} >
