@@ -10,6 +10,7 @@ export default function Jobs({ list }) {
     }, [])
 
     const handleJob = (cur) => {
+        console.log('# selected job');
         setJob(cur)
     }
 
@@ -17,7 +18,13 @@ export default function Jobs({ list }) {
         <div className={styles.container}>
             <div className={styles.options}>
                 {list.map((work) => (
-                    <span key={work.name} className={styles.title} onClick={() => handleJob(work)}>{work.name}</span>
+                    <span
+                        key={work.name}
+                        className={styles.title + ' ' + `${job.name == work.name && styles.titleActive}`}
+                        onClick={() => handleJob(work)}
+                    >
+                        {work.name}
+                    </span>
                 ))}
             </div>
             <div className={styles.details}>
