@@ -1,9 +1,5 @@
 @import "mixins";
-
-$color-primary: var(--color-default);
-$color-low-black: var(--color-low-black);
-$color-black: var(--color-black);
-$color-white: var(--color-white);
+@import './globals.scss';
 
 @font-face {
   font-family: 'pacfontregular';
