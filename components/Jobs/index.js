@@ -3,10 +3,11 @@ import styles from './styles.module.scss'
 
 export default function Jobs({ list }) {
     const [job, setJob] = useState({});
+    const listWorks = [...list].reverse();
 
     useEffect(() => {
-        const lastElement = list.slice(-1);
-        handleJob(...lastElement)
+        const firstElement = listWorks[0];
+        handleJob(firstElement)
     }, [])
 
     const handleJob = (cur) => {
@@ -17,7 +18,7 @@ export default function Jobs({ list }) {
     return (
         <div className={styles.container}>
             <div className={styles.options}>
-                {list.map((work) => (
+                {listWorks.map((work) => (
                     <span
                         key={work.name}
                         className={styles.title + ' ' + `${job.name == work.name && styles.titleActive}`}
