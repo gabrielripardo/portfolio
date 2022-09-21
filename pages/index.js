@@ -81,11 +81,40 @@ export default function Home() {
             <img className={styles.avatarImage} src="./assets/avatar-gabriel.png" alt="avatar do Gabriel" />
           </div>
         </section>
-        <section id="projects" className={styles.projects}>
-          <h2 className={styles.titleSection} >Projetos</h2>
+        <section id="jobs" className={styles.jobs}>
           <div className={styles.gridLayout}>
+            <h2 className={styles.titleSection} >Experiências</h2>
             <Jobs list={jobsList} />
           </div>
+        </section>
+        <section id="skills" className={styles.skills}>
+          <h2 className={styles.titleSection} >Principais Habilidades</h2>
+          <div className={styles.listSkils} >
+            <a className={styles.skill} href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">
+              <img src="./assets/skills/small/html-logo.png" alt="logo do HTML"
+                title="Linguagem de marcação de hipertexto" />
+              <span>Html</span>
+            </a>
+            <a className={styles.skill} href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank"
+              title="Linguagem de folha de estilo em cascata">
+              <img src="./assets/skills/small/css-logo.png" alt="logo do CSS" />
+              <span>CSS</span>
+            </a>
+            <a className={styles.skill} href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank"
+              title="Linguagem de programação Javascript">
+              <img src="./assets/skills/small/js-logo.png" alt="logo do Javascript" />
+              <span>Javascript</span>
+            </a>
+            <a className={styles.skill} href="https://pt-br.reactjs.org/" target="_blank"
+              title="Biblioteca Javascript React JS">
+              <img src="./assets/skills/small/react-logo.png" alt="logo do React JS" />
+              <span>React JS</span>
+            </a>
+          </div>
+        </section>
+        <section id="projects" className={styles.projects}>
+          <h2>Projetos</h2>
+
           {/* <div className={styles.swiper} >
             <div className={styles.swiperWrapper} >
               <div className={styles.swiperWrapper} >
@@ -230,84 +259,6 @@ export default function Home() {
             <li><a href="https://github.com/gabrielripardo/covid" target="_blank">Analytics Covid-19</a></li>
             <li><a href="https://github.com/gabrielripardo/references_web/tree/master/instagram-login" target="_blank">Intagram login Clone </a></li>https://62bf079dde934f76ac24f1dc--glittering-churros-427c95.netlify.app/instagram-login/
           </ul> */}
-        </section>
-        <section id="skills" className={styles.skills}>
-          <h2 className={styles.titleSection} >Principais Habilidades</h2>
-          <div className={styles.listSkils} >
-            <a className={styles.skill} href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">
-              <img src="./assets/skills/small/html-logo.png" alt="logo do HTML"
-                title="Linguagem de marcação de hipertexto" />
-              <span>Html</span>
-            </a>
-            <a className={styles.skill} href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank"
-              title="Linguagem de folha de estilo em cascata">
-              <img src="./assets/skills/small/css-logo.png" alt="logo do CSS" />
-              <span>CSS</span>
-            </a>
-            <a className={styles.skill} href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank"
-              title="Linguagem de programação Javascript">
-              <img src="./assets/skills/small/js-logo.png" alt="logo do Javascript" />
-              <span>Javascript</span>
-            </a>
-            <a className={styles.skill} href="https://pt-br.reactjs.org/" target="_blank"
-              title="Biblioteca Javascript React JS">
-              <img src="./assets/skills/small/react-logo.png" alt="logo do React JS" />
-              <span>React JS</span>
-            </a>
-          </div>
-        </section>
-        <section id="jobs" className={styles.jobs}>
-          <h2>Experiências</h2>
-          <div className={styles.cards} >
-            <div className={styles.card} >
-              <a className={styles.cardHeader} href="https://portal.cfm.org.br/" target="_blank">
-                <img className={styles.cardLogo} src="/assets/jobs/cfm.jpeg" alt="logo do Conselho Federal de Medicina" />
-                <h3 className={styles.cardTitle} >Conselho Federal de Medicina</h3>
-              </a>
-              <h3 className={styles.cardSubtitle} >Estagiário Desenvolvedor Web</h3>
-              <h4 className={styles.cardPeriod} >jul 2019 - jun 2020</h4>
-              <ul>
-                <li>Desenvolvimento fullstack de sistemas web com PHP, Jquery, Javascript e Vue JS.</li>
-              </ul>
-            </div>
-            <div className={styles.card} >
-              <a className={styles.cardHeader} href="https://ibti.org.br/" target="_blank">
-                <img className={styles.cardLogo} src="/assets/jobs/ibti.jpeg"
-                  alt="logo do Instituto Brasília de Tecnologia e Inovação" />
-                <h3 className={styles.cardTitle} >Instituto Brasília de Tecnologia e Inovação - IBTI</h3>
-              </a>
-              <h3 className={styles.cardSubtitle} >Desenvolvedor Front-end</h3>
-              <h4 className={styles.cardPeriod} >jul 2021 - ago 2021</h4>
-              <ul>
-                <li>Desenvolvimento de Plataforma web para gerenciamento de dispositivos IoT com React JS e
-                  Material UI.</li>
-              </ul>
-            </div>
-            <div className={styles.card} >
-              <a className={styles.cardHeader} href="https://www.gebit.com.br/" target="_blank">
-                <img className={styles.cardLogo} src="/assets/jobs/gebit.jpeg" alt="logo da Gebit" />
-                <h3 className={styles.cardTitle} >Gebit</h3>
-              </a>
-              <h3 className={styles.cardSubtitle} >Desenvolvedor Front-end</h3>
-              <h4 className={styles.cardPeriod} >jul 2021 - ago 2021</h4>
-              <ul>
-                <li>Desenvolvimento web com Vue JS, React js e Next JS.</li>
-                <li>Desenvolvimento mobile, utilizando Ionic com Angular.</li>
-              </ul>
-            </div>
-            <div className={styles.card} >
-              <a className={styles.cardHeader} href="https://www.smartnx.com/" target="_blank">
-                <img className={styles.cardLogo} src="/assets/jobs/snx.jpeg" alt="logo da Smart Nx" />
-                <h3 className={styles.cardTitle} >Smart Nx</h3>
-              </a>
-              <h3 className={styles.cardSubtitle} >Desenvolvedor Front-end</h3>
-              <h4 className={styles.cardPeriod} >mar 2022 - jun 2022</h4>
-              <ul>
-                <li>Desenvolvimento de sistema web para centralização de serviços de atendimento ao cliente,
-                  utilizando React JS e Ant Design.</li>
-              </ul>
-            </div>
-          </div>
         </section>
         <section id="contact" className={styles.contact}>
           <h2>Entre em contato comigo</h2>

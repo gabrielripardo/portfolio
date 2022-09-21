@@ -48,8 +48,8 @@
 }
 
 .titleSection {
-  font: 22px "-apple-system", "Heebo";
-  color: #34a297;
+  font-size: 40px;
+  font-weight: 500;
 }
 
 .menuBtn:hover .header {
@@ -197,6 +197,12 @@
   align-items: center;
   row-gap: 40px;
   background-color: $color-low-black;
+  padding: 96px 48px;
+
+  .titleSection {
+    padding-bottom: 30px;
+    width: 100%;
+  }
 }
 
 .jobs h3,
