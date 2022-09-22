@@ -43,14 +43,14 @@ export default function Home() {
           <Link href="#introduce">
             <a onClick={goToSection}><span className={styles.namePage}>Home</span></a>
           </Link>
+          <Link href="#jobs">
+            <a onClick={goToSection} ><span className={styles.namePage}>Experiências</span></a>
+          </Link>
           {/* <Link href="#projects">
             <a onClick={goToSection}><span className={styles.namePage}>Projetos</span></a>
           </Link> */}
           <Link href="#skills">
             <a onClick={goToSection} ><span className={styles.namePage}>Habilidades</span></a>
-          </Link>
-          <Link href="#jobs">
-            <a onClick={goToSection} ><span className={styles.namePage}>Experiências</span></a>
           </Link>
           <Link href="#contact">
             <a onClick={goToSection} href=""><span className={styles.namePage}>Contato</span></a>
