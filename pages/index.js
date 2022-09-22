@@ -78,7 +78,7 @@ export default function Home() {
             </p>
             <a className={styles.btnDefault} href="#contact">Contate-me</a>          </div>
           <div className={styles.avatar} >
-            <img className={styles.avatarImage} src="./assets/avatar-gabriel.png" alt="avatar do Gabriel" />
+            <Image className={styles.avatarImage} src="./assets/avatar-gabriel.png" alt="avatar do Gabriel"></Image>
           </div>
         </section>
         <section id="jobs" className={styles.jobs}>
@@ -90,24 +90,24 @@ export default function Home() {
         <section id="skills" className={styles.skills}>
           <h2 className={styles.titleSection} >Principais Habilidades</h2>
           <div className={styles.listSkils} >
-            <a className={styles.skill} href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">
-              <img src="./assets/skills/small/html-logo.png" alt="logo do HTML"
+            <a className={styles.skill} href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank" rel="noopener noreferrer">
+              <Image src="./assets/skills/small/html-logo.png" alt="logo do HTML"
                 title="Linguagem de marcação de hipertexto" />
               <span>Html</span>
             </a>
-            <a className={styles.skill} href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank"
+            <a className={styles.skill} href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank" rel="noopener noreferrer"
               title="Linguagem de folha de estilo em cascata">
-              <img src="./assets/skills/small/css-logo.png" alt="logo do CSS" />
+              <Image src="./assets/skills/small/css-logo.png" alt="logo do CSS"></Image>
               <span>CSS</span>
             </a>
-            <a className={styles.skill} href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank"
+            <a className={styles.skill} href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer"
               title="Linguagem de programação Javascript">
-              <img src="./assets/skills/small/js-logo.png" alt="logo do Javascript" />
+              <Image src="./assets/skills/small/js-logo.png" alt="logo do Javascript"></Image>
               <span>Javascript</span>
             </a>
-            <a className={styles.skill} href="https://pt-br.reactjs.org/" target="_blank"
+            <a className={styles.skill} href="https://pt-br.reactjs.org/" target="_blank" rel="noopener noreferrer"
               title="Biblioteca Javascript React JS">
-              <img src="./assets/skills/small/react-logo.png" alt="logo do React JS" />
+              <Image src="./assets/skills/small/react-logo.png" alt="logo do React JS"></Image>
               <span>React JS</span>
             </a>
           </div>
@@ -121,7 +121,7 @@ export default function Home() {
                 <h3>Urna eletrônica</h3>
                 <div className={styles.swiperWrapperDescription} >
                   <div className={styles.swiperWrapperDemo} >
-                    <img className={styles.projectScreen} src="./img/urna-eletronica_screenshot.png"
+                    <Image className={styles.projectScreen} src="./img/urna-eletronica_screenshot.png"
                       alt="screenshot do projeto" />
                   </div>
                   <div className={styles.projectDescription} >
@@ -132,10 +132,10 @@ export default function Home() {
                       Foi utilizado html, css e o Vue.JS no desenvolvimento dessa aplicação.
                     </p>
                     <div className={styles.swiperWrapperLinks} >
-                      <a href="https://urnaeletronicabrasil.netlify.app/" target="_blank">Abrir Site</a>
+                      <a href="https://urnaeletronicabrasil.netlify.app/" target="_blank" rel="noopener noreferrer">Abrir Site</a>
                       <a className={styles.github} href="https://github.com/gabrielripardo/urna-eletronica"
-                        target="_blank" title="repositório do projeto">
-                        <img src="/assets/icons/github.svg" alt="linkedin logo" width="25"
+                        target="_blank" rel="noopener noreferrer" title="repositório do projeto">
+                        <Image src="/assets/icons/github.svg" alt="linkedin logo" width="25"
                           height="25" />
                       </a>
                     </div>
@@ -146,7 +146,7 @@ export default function Home() {
                 <h3>Loja de Relógios</h3>
                 <div className={styles.swiperWrapperDescription} >
                   <div className={styles.swiperWrapperDemo} >
-                    <img className={styles.projectScreen} src="./img/vitrios-ecommerce_screenshot.png"
+                    <Image className={styles.projectScreen} src="./img/vitrios-ecommerce_screenshot.png"
                       alt="screenshot do projeto" />
                   </div>
                   <div className={styles.projectDescription} >
@@ -157,12 +157,12 @@ export default function Home() {
                       Sass.
                     </p>
                     <div className={styles.swiperWrapperLinks} >
-                      <a href="https://vitrios-front-end-challenge.vercel.app/" target="_blank">Abrir
+                      <a href="https://vitrios-front-end-challenge.vercel.app/" target="_blank" rel="noopener noreferrer">Abrir
                         Site</a>
                       <a className={styles.github}
                         href="https://bitbucket.org/gabrielripardo/vitrios-front-end-challenge/src/main/"
-                        target="_blank" title="repositório do projeto">
-                        <img src="/assets/icons/github.svg" alt="linkedin logo" width="25"
+                        target="_blank" rel="noopener noreferrer" title="repositório do projeto">
+                        <Image src="/assets/icons/github.svg" alt="linkedin logo" width="25"
                           height="25" />
                       </a>
                     </div>
@@ -173,7 +173,7 @@ export default function Home() {
                 <h3>Mata Mosquito</h3>
                 <div className={styles.swiperWrapperDescription} >
                   <div className={styles.swiperWrapperDemo} >
-                    <img className={styles.projectScreen} src="./img/mata-mosquito_screenshot.png"
+                    <Image className={styles.projectScreen} src="./img/mata-mosquito_screenshot.png"
                       alt="screenshot do projeto" />
                   </div>
                   <div className={styles.projectDescription} >
@@ -184,10 +184,10 @@ export default function Home() {
                       as pontuações.
                     </p>
                     <div className={styles.swiperWrapperLinks} >
-                      <a href="https://matamosquitogamejs.netlify.app/" target="_blank">Abrir Site</a>
+                      <a href="https://matamosquitogamejs.netlify.app/" target="_blank" rel="noopener noreferrer">Abrir Site</a>
                       <a className={styles.github} href="https://github.com/gabrielripardo/game-mosquito"
-                        target="_blank" title="repositório do projeto">
-                        <img src="/assets/icons/github.svg" alt="linkedin logo" width="25"
+                        target="_blank" rel="noopener noreferrer" title="repositório do projeto">
+                        <Image src="/assets/icons/github.svg" alt="linkedin logo" width="25"
                           height="25" />
                       </a>
                     </div>
@@ -199,7 +199,7 @@ export default function Home() {
                 <h3>Psychonauts</h3>
                 <div className={styles.swiperWrapperDescription} >
                   <div className={styles.swiperWrapperDemo} >
-                    <img className={styles.projectScreen} src="./img/psychonauts_screenshot.png"
+                    <Image className={styles.projectScreen} src="./img/psychonauts_screenshot.png"
                       alt="screenshot do projeto" />
                   </div>
                   <div className={styles.projectDescription} >
@@ -209,10 +209,10 @@ export default function Home() {
                       principais tecnologias o React JS, Redux e Material UI.
                     </p>
                     <div className={styles.swiperWrapperLinks} >
-                      <a href="https://psychonauts-web.netlify.app/" target="_blank">Abrir Site</a>
+                      <a href="https://psychonauts-web.netlify.app/" target="_blank" rel="noopener noreferrer">Abrir Site</a>
                       <a className={styles.github} href="https://github.com/gabrielripardo/psychonauts"
-                        target="_blank" title="repositório do projeto">
-                        <img src="/assets/icons/github.svg" alt="linkedin logo" width="25"
+                        target="_blank" rel="noopener noreferrer" title="repositório do projeto">
+                        <Image src="/assets/icons/github.svg" alt="linkedin logo" width="25"
                           height="25" />
                       </a>
                     </div>
@@ -223,7 +223,7 @@ export default function Home() {
                 <h3>Pharma Inc</h3>
                 <div className={styles.swiperWrapperDescription} >
                   <div className={styles.swiperWrapperDemo} >
-                    <img className={styles.projectScreen} src="./img/pharma-inc_screenshot.png"
+                    <Image className={styles.projectScreen} src="./img/pharma-inc_screenshot.png"
                       alt="screenshot do projeto" />
                   </div>
                   <div className={styles.projectDescription} >
@@ -236,10 +236,10 @@ export default function Home() {
                     </p>
                     <div className={styles.swiperWrapperLinks} >
                       <a href="https://pharma-inc-git-main-gabrielripardo.vercel.app/"
-                        target="_blank">Abrir Site</a>
+                        target="_blank" rel="noopener noreferrer">Abrir Site</a>
                       <a className={styles.github} href="https://github.com/gabrielripardo/starwars-app"
-                        target="_blank" title="repositório do projeto">
-                        <img src="/assets/icons/github.svg" alt="linkedin logo" width="25"
+                        target="_blank" rel="noopener noreferrer" title="repositório do projeto">
+                        <Image src="/assets/icons/github.svg" alt="linkedin logo" width="25"
                           height="25" />
                       </a>
                     </div>
@@ -256,8 +256,8 @@ export default function Home() {
           </div>
 
           <ul>
-            <li><a href="https://github.com/gabrielripardo/covid" target="_blank">Analytics Covid-19</a></li>
-            <li><a href="https://github.com/gabrielripardo/references_web/tree/master/instagram-login" target="_blank">Intagram login Clone </a></li>https://62bf079dde934f76ac24f1dc--glittering-churros-427c95.netlify.app/instagram-login/
+            <li><a href="https://github.com/gabrielripardo/covid" target="_blank" rel="noopener noreferrer">Analytics Covid-19</a></li>
+            <li><a href="https://github.com/gabrielripardo/references_web/tree/master/instagram-login" target="_blank" rel="noopener noreferrer">Intagram login Clone </a></li>https://62bf079dde934f76ac24f1dc--glittering-churros-427c95.netlify.app/instagram-login/
           </ul> */}
         </section>
         <section id="contact" className={styles.contact}>
