@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.scss'
 import Link from 'next/link'
 import Jobs from '../components/Jobs'
@@ -90,22 +89,22 @@ export default function Home() {
         <section id="skills" className={styles.skills}>
           <h2 className={styles.titleSection} >Principais Habilidades</h2>
           <div className={styles.listSkils} >
-            <a className={styles.skill} href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">
+            <a className={styles.skill} href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank" rel="noopener noreferrer">
               <img src="./assets/skills/small/html-logo.png" alt="logo do HTML"
                 title="Linguagem de marcação de hipertexto" />
               <span>Html</span>
             </a>
-            <a className={styles.skill} href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank"
+            <a className={styles.skill} href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank" rel="noopener noreferrer"
               title="Linguagem de folha de estilo em cascata">
               <img src="./assets/skills/small/css-logo.png" alt="logo do CSS" />
               <span>CSS</span>
             </a>
-            <a className={styles.skill} href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank"
+            <a className={styles.skill} href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer"
               title="Linguagem de programação Javascript">
               <img src="./assets/skills/small/js-logo.png" alt="logo do Javascript" />
               <span>Javascript</span>
             </a>
-            <a className={styles.skill} href="https://pt-br.reactjs.org/" target="_blank"
+            <a className={styles.skill} href="https://pt-br.reactjs.org/" target="_blank" rel="noopener noreferrer"
               title="Biblioteca Javascript React JS">
               <img src="./assets/skills/small/react-logo.png" alt="logo do React JS" />
               <span>React JS</span>
@@ -132,9 +131,9 @@ export default function Home() {
                       Foi utilizado html, css e o Vue.JS no desenvolvimento dessa aplicação.
                     </p>
                     <div className={styles.swiperWrapperLinks} >
-                      <a href="https://urnaeletronicabrasil.netlify.app/" target="_blank">Abrir Site</a>
+                      <a href="https://urnaeletronicabrasil.netlify.app/" target="_blank" rel="noopener noreferrer">Abrir Site</a>
                       <a className={styles.github} href="https://github.com/gabrielripardo/urna-eletronica"
-                        target="_blank" title="repositório do projeto">
+                        target="_blank" rel="noopener noreferrer" rel="noopener noreferrer"title="repositório do projeto">
                         <img src="/assets/icons/github.svg" alt="linkedin logo" width="25"
                           height="25" />
                       </a>
@@ -157,11 +156,11 @@ export default function Home() {
                       Sass.
                     </p>
                     <div className={styles.swiperWrapperLinks} >
-                      <a href="https://vitrios-front-end-challenge.vercel.app/" target="_blank">Abrir
+                      <a href="https://vitrios-front-end-challenge.vercel.app/" target="_blank" rel="noopener noreferrer">Abrir
                         Site</a>
                       <a className={styles.github}
                         href="https://bitbucket.org/gabrielripardo/vitrios-front-end-challenge/src/main/"
-                        target="_blank" title="repositório do projeto">
+                        target="_blank" rel="noopener noreferrer" rel="noopener noreferrer"title="repositório do projeto">
                         <img src="/assets/icons/github.svg" alt="linkedin logo" width="25"
                           height="25" />
                       </a>
@@ -184,9 +183,9 @@ export default function Home() {
                       as pontuações.
                     </p>
                     <div className={styles.swiperWrapperLinks} >
-                      <a href="https://matamosquitogamejs.netlify.app/" target="_blank">Abrir Site</a>
+                      <a href="https://matamosquitogamejs.netlify.app/" target="_blank" rel="noopener noreferrer">Abrir Site</a>
                       <a className={styles.github} href="https://github.com/gabrielripardo/game-mosquito"
-                        target="_blank" title="repositório do projeto">
+                        target="_blank" rel="noopener noreferrer" rel="noopener noreferrer"title="repositório do projeto">
                         <img src="/assets/icons/github.svg" alt="linkedin logo" width="25"
                           height="25" />
                       </a>
@@ -209,9 +208,9 @@ export default function Home() {
                       principais tecnologias o React JS, Redux e Material UI.
                     </p>
                     <div className={styles.swiperWrapperLinks} >
-                      <a href="https://psychonauts-web.netlify.app/" target="_blank">Abrir Site</a>
+                      <a href="https://psychonauts-web.netlify.app/" target="_blank" rel="noopener noreferrer">Abrir Site</a>
                       <a className={styles.github} href="https://github.com/gabrielripardo/psychonauts"
-                        target="_blank" title="repositório do projeto">
+                        target="_blank" rel="noopener noreferrer" rel="noopener noreferrer"title="repositório do projeto">
                         <img src="/assets/icons/github.svg" alt="linkedin logo" width="25"
                           height="25" />
                       </a>
@@ -236,9 +235,9 @@ export default function Home() {
                     </p>
                     <div className={styles.swiperWrapperLinks} >
                       <a href="https://pharma-inc-git-main-gabrielripardo.vercel.app/"
-                        target="_blank">Abrir Site</a>
+                        target="_blank" rel="noopener noreferrer">Abrir Site</a>
                       <a className={styles.github} href="https://github.com/gabrielripardo/starwars-app"
-                        target="_blank" title="repositório do projeto">
+                        target="_blank" rel="noopener noreferrer" rel="noopener noreferrer"title="repositório do projeto">
                         <img src="/assets/icons/github.svg" alt="linkedin logo" width="25"
                           height="25" />
                       </a>
@@ -256,8 +255,8 @@ export default function Home() {
           </div>
 
           <ul>
-            <li><a href="https://github.com/gabrielripardo/covid" target="_blank">Analytics Covid-19</a></li>
-            <li><a href="https://github.com/gabrielripardo/references_web/tree/master/instagram-login" target="_blank">Intagram login Clone </a></li>https://62bf079dde934f76ac24f1dc--glittering-churros-427c95.netlify.app/instagram-login/
+            <li><a href="https://github.com/gabrielripardo/covid" target="_blank" rel="noopener noreferrer">Analytics Covid-19</a></li>
+            <li><a href="https://github.com/gabrielripardo/references_web/tree/master/instagram-login" target="_blank" rel="noopener noreferrer">Intagram login Clone </a></li>https://62bf079dde934f76ac24f1dc--glittering-churros-427c95.netlify.app/instagram-login/
           </ul> */}
         </section>
         <section id="contact" className={styles.contact}>
@@ -274,10 +273,10 @@ export default function Home() {
       <footer className={styles.footer}>
         <div className={styles.networks}>
           <a className={styles.linkedin} href="https://www.linkedin.com/in/gabriel-sena-317a8412a/">
-            <Image src="/assets/icons/linkedin.svg" alt="linkedin logo" width="25" height="25" />
+            <img src="/assets/icons/linkedin.svg" alt="linkedin logo" width="25" height="25" />
           </a>
           <a className={styles.github} href="https://github.com/gabrielripardo">
-            <Image src="/assets/icons/github.svg" alt="linkedin logo" width="25" height="25" />
+            <img src="/assets/icons/github.svg" alt="linkedin logo" width="25" height="25" />
           </a>
         </div>
         <div className={styles.textFooter}>Copyright &copy; 2022 Gabriel Ripardo de Sena</div>
