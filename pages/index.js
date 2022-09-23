@@ -111,8 +111,8 @@ export default function Home() {
             </a>
           </div>
         </section>
-        {/* <section id="projects" className={styles.projects}> */}
-        <h2>Projetos</h2>
+        {/* <section id="projects" className={styles.projects}> 
+        <h2>Projetos</h2>*/}
 
 
 
