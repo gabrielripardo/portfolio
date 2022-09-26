@@ -66,16 +66,20 @@ export default function Home() {
 
       <main className={styles.main}>
         <section id="introduce" className={styles.introduce}>
-          <div className={styles.resume}>
-            <h1 className={styles.titleSection} >
-              Olá, sou o
-              <span className={styles.name}>Gabriel Ripardo</span>
-              <span className={styles.office}>Desenvolvedor Front-end</span>
-            </h1>
-            <a className={styles.btnDefault} href="#contact">Contate-me</a>
-          </div>
-          <div className={styles.avatar} >
-            <img className={styles.avatarImage} src="./assets/avatar-gabriel.png" alt="avatar do Gabriel" />
+          <div className={styles.gridLayout}>
+            <div className={styles.contentIntroduce}>
+              <div className={styles.resume}>
+                <h1 className={styles.titleSection} >
+                  Olá, sou o
+                  <span className={styles.name}>Gabriel Ripardo</span>
+                  <span className={styles.office}>Desenvolvedor Front-end</span>
+                </h1>
+                <a className={styles.btnDefault} href="#contact">Contate-me</a>
+              </div>
+              <div className={styles.avatar} >
+                <img className={styles.avatarImage} src="./assets/avatar-gabriel.png" alt="avatar do Gabriel" />
+              </div>
+            </div>
           </div>
         </section>
         <section className={styles.aboutMe}>
