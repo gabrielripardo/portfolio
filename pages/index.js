@@ -33,9 +33,9 @@ export default function Home() {
         <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
       </Head>
       <header className={styles.header} style={btnHamburger ? fullscreen : null}>
-        <h1 className={styles.logo}>
+        <span className={styles.logo}>
           Portfólio
-        </h1>
+        </span>
 
         <input id={styles.menuHamburger} type="checkbox" checked={btnHamburger} readOnly />
 
@@ -67,17 +67,29 @@ export default function Home() {
       <main className={styles.main}>
         <section id="introduce" className={styles.introduce}>
           <div className={styles.resume}>
-            <h2 className={styles.titleSection} >Olá, sou o <strong>Gabriel Ripardo</strong></h2>
-            <h3>Desenvolvedor Front-end</h3>
-            <p className={styles.description}>
-              Formação em Sistemas de Informações, há quatro anos
-              atuando na área de desenvolvimento Web, com React JS, Vue JS,
-              Next JS e desenvolvimento híbrido de aplicativos para dispositivos móveis utilizando
-              o Ionic com o Angular.
-            </p>
-            <a className={styles.btnDefault} href="#contact">Contate-me</a>          </div>
+            <h1 className={styles.titleSection} >
+              Olá, sou o
+              <span className={styles.name}>Gabriel Ripardo</span>
+              <span className={styles.office}>Desenvolvedor Front-end</span>
+            </h1>
+            <a className={styles.btnDefault} href="#contact">Contate-me</a>
+          </div>
           <div className={styles.avatar} >
             <img className={styles.avatarImage} src="./assets/avatar-gabriel.png" alt="avatar do Gabriel" />
+          </div>
+        </section>
+        <section className={styles.aboutMe}>
+          <div className={styles.gridLayout}>
+            <h2 className={styles.titleSection} >Sobre mim</h2>
+            <p className={styles.description}>
+              Sempre querendo descobrir como as coisas funcionavam, costuvama me pergutar
+              &quot;como aquele site é feito&quot;, &quot;aquele app faz algo simples, quanto tempo leva pra fazer&quot;.
+              Foram esses tipos de perguntas que me levaram a entrar na área de desenvolvimento e
+              depois começar a colocar em prática tudo que foi adquirido através de aulas, livros, bootcamps.
+              Com a minha jornada de 4 anos desenvolvendo sistemas e apps para diversas empresas, decidi a pouco menos de 2 anos
+              focar no desenvolvimento front-end, objetivando melhorar a qualidade do código css e o uso
+              adequado do Javascript.
+            </p>
           </div>
         </section>
         <section id="jobs" className={styles.jobs}>

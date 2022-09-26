@@ -75,8 +75,6 @@
   justify-content: center;
   align-items: center;
   padding: 30px 20px 50px;
-  -webkit-box-shadow: 0px -3px 6px -3px rgba(136, 165, 191, 0.48);
-  box-shadow: 0px -3px 6px -3px rgba(136, 165, 191, 0.48);
 }
 
 .gridLayout {
@@ -138,25 +136,40 @@
 }
 
 .introduce {
-  max-width: 990px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   padding: 40px 20px;
   margin-top: 80px;
-  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
   background-color: $color-black;
+
+  .titleSection {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+
+    .name {
+      font-size: 2.8rem;
+      color: $color-white;
+      margin: 16px 0;
+    }
+
+    .office {
+      font-size: 1.3rem;
+    }
+  }
 }
 
-.description {
-  font-size: 'Heebo';
+.aboutMe {
+  padding: 96px 48px;
+
+  .description {
+    font-size: 'Heebo';
+  }
 }
 
-.introduce h3 {
-  font: 19px "-apple-system", "Heebo";
-  color: #b7892b;
-}
 
 .resume .description {
   max-width: 600px;
