@@ -40,8 +40,8 @@ export default function Home() {
         <input id={styles.menuHamburger} type="checkbox" checked={btnHamburger} readOnly />
 
         <nav className={styles.navList}>
-          <Link href="#introduce">
-            <a onClick={goToSection}><span className={styles.namePage}>Home</span></a>
+          <Link href="#about">
+            <a onClick={goToSection}><span className={styles.namePage}>Sobre mim</span></a>
           </Link>
           <Link href="#jobs">
             <a onClick={goToSection} ><span className={styles.namePage}>Experiências</span></a>
@@ -65,7 +65,7 @@ export default function Home() {
       </header>
 
       <main className={styles.main}>
-        <section id="introduce" className={styles.introduce}>
+        <section className={styles.introduce}>
           <div className={styles.gridLayout}>
             <div className={styles.contentIntroduce}>
               <div className={styles.resume}>
@@ -82,14 +82,14 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className={styles.aboutMe}>
+        <section id="about" className={styles.aboutMe}>
           <div className={styles.gridLayout}>
             <h2 className={styles.titleSection} >Sobre mim</h2>
             <p className={styles.description}>
               Sempre querendo descobrir como as coisas funcionavam, costuvama me pergutar
               &quot;como aquele site é feito&quot;, &quot;aquele app faz algo simples, quanto tempo leva pra fazer&quot;.
               Foram esses tipos de perguntas que me levaram a entrar na área de desenvolvimento e
-              depois começar a colocar em prática tudo que foi adquirido através de aulas, livros, bootcamps.
+              depois começar a colocar em prática tudo o que foi adquirido através de aulas, livros, bootcamps.
               Com a minha jornada de 4 anos desenvolvendo sistemas e apps para diversas empresas, decidi a pouco menos de 2 anos
               focar no desenvolvimento front-end, objetivando melhorar a qualidade do código css e o uso
               adequado do Javascript.

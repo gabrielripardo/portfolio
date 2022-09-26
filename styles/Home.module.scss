@@ -170,7 +170,8 @@
   padding: 96px 48px;
 
   .description {
-    font-size: 'Heebo';
+    color: $color-gray-medium;
+    font: 20px 'Heebo';
   }
 }
 
@@ -204,7 +205,7 @@
   justify-content: center;
   align-items: center;
   gap: 40px;
-  background-color: $color-black;
+  background-color: $color-low-black;
 }
 
 .jobs {
@@ -213,7 +214,7 @@
   justify-content: center;
   align-items: center;
   row-gap: 40px;
-  background-color: $color-low-black;
+  background-color: $color-black;
   padding: 96px 48px;
 
   .titleSection {

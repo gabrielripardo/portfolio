@@ -48,6 +48,6 @@ a {
 
   body {
     color: #fafafa;
-    background: black;
+    background: var(--color-black);
   }
 }
