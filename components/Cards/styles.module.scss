@@ -1,0 +1,8 @@
+@import '../../styles/globals.scss';
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    // background-color: $color-black;
+}

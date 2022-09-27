@@ -4,6 +4,9 @@ import styles from '../styles/Home.module.scss'
 import Link from 'next/link'
 import Jobs from '../components/Jobs'
 import jobsList from '../pages/api/jobsList.json'
+import projectsList from '../pages/api/projectsList.json'
+import Card from '../components/Card'
+import Cards from '../components/Cards'
 
 const fullscreen = {
   height: '100%'
@@ -102,6 +105,12 @@ export default function Home() {
             <Jobs list={jobsList} />
           </div>
         </section>
+        <section id="projects" className={styles.projects}>
+          <div className={styles.gridLayout}>
+            <h2 className={styles.titleSection}>Projetos</h2>
+            <Cards list={projectsList} />
+          </div>
+        </section>
         <section id="skills" className={styles.skills}>
           <h2 className={styles.titleSection} >Principais Habilidades</h2>
           <div className={styles.listSkils} >
@@ -127,156 +136,6 @@ export default function Home() {
             </a>
           </div>
         </section>
-        {/* <section id="projects" className={styles.projects}> 
-        <h2>Projetos</h2>*/}
-
-
-
-        {/* <div className={styles.swiper} >
-            <div className={styles.swiperWrapper} >
-              <div className={styles.swiperWrapper} >
-                <h3>Urna eletrônica</h3>
-                <div className={styles.swiperWrapperDescription} >
-                  <div className={styles.swiperWrapperDemo} >
-                    <img className={styles.projectScreen} src="./img/urna-eletronica_screenshot.png"
-                      alt="screenshot do projeto" />
-                  </div>
-                  <div className={styles.projectDescription} >
-                    <p className={styles.textDescription} >
-                      Esse projeto apresenta a interface da urna eletrônica brasileira e possibilita
-                      o usuário digitar ou clicar nos números referente ao candidato,
-                      clicar no botão confirmar e ter o voto computado.
-                      Foi utilizado html, css e o Vue.JS no desenvolvimento dessa aplicação.
-                    </p>
-                    <div className={styles.swiperWrapperLinks} >
-                      <a href="https://urnaeletronicabrasil.netlify.app/" target="_blank" rel="noopener noreferrer">Abrir Site</a>
-                      <a className={styles.github} href="https://github.com/gabrielripardo/urna-eletronica"
-                        target="_blank" rel="noopener noreferrer" rel="noopener noreferrer"title="repositório do projeto">
-                        <img src="/assets/icons/github.svg" alt="linkedin logo" width="25"
-                          height="25" />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className={styles.swiperWrapper} >
-                <h3>Loja de Relógios</h3>
-                <div className={styles.swiperWrapperDescription} >
-                  <div className={styles.swiperWrapperDemo} >
-                    <img className={styles.projectScreen} src="./img/vitrios-ecommerce_screenshot.png"
-                      alt="screenshot do projeto" />
-                  </div>
-                  <div className={styles.projectDescription} >
-                    <p className={styles.textDescription} >
-                      Simples e-commerce com uma página com cards contendo a foto do relógio, nome e
-                      modelo, preço,
-                      e botão para comprar com hover animado. Nesse projeto foi utilizado o React JS e
-                      Sass.
-                    </p>
-                    <div className={styles.swiperWrapperLinks} >
-                      <a href="https://vitrios-front-end-challenge.vercel.app/" target="_blank" rel="noopener noreferrer">Abrir
-                        Site</a>
-                      <a className={styles.github}
-                        href="https://bitbucket.org/gabrielripardo/vitrios-front-end-challenge/src/main/"
-                        target="_blank" rel="noopener noreferrer" rel="noopener noreferrer"title="repositório do projeto">
-                        <img src="/assets/icons/github.svg" alt="linkedin logo" width="25"
-                          height="25" />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className={styles.swiperWrapper} >
-                <h3>Mata Mosquito</h3>
-                <div className={styles.swiperWrapperDescription} >
-                  <div className={styles.swiperWrapperDemo} >
-                    <img className={styles.projectScreen} src="./img/mata-mosquito_screenshot.png"
-                      alt="screenshot do projeto" />
-                  </div>
-                  <div className={styles.projectDescription} >
-                    <p className={styles.textDescription} >
-                      Game desenvolvido com html, css e javascript puro que tem como objetivo capturar o
-                      maior número possível de moscas utilizando o
-                      click do mouse em 30 segundos. Possui três níveis de dificuldades e ranking de todas
-                      as pontuações.
-                    </p>
-                    <div className={styles.swiperWrapperLinks} >
-                      <a href="https://matamosquitogamejs.netlify.app/" target="_blank" rel="noopener noreferrer">Abrir Site</a>
-                      <a className={styles.github} href="https://github.com/gabrielripardo/game-mosquito"
-                        target="_blank" rel="noopener noreferrer" rel="noopener noreferrer"title="repositório do projeto">
-                        <img src="/assets/icons/github.svg" alt="linkedin logo" width="25"
-                          height="25" />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className={styles.swiperWrapper} >
-                <h3>Psychonauts</h3>
-                <div className={styles.swiperWrapperDescription} >
-                  <div className={styles.swiperWrapperDemo} >
-                    <img className={styles.projectScreen} src="./img/psychonauts_screenshot.png"
-                      alt="screenshot do projeto" />
-                  </div>
-                  <div className={styles.projectDescription} >
-                    <p className={styles.textDescription} >
-                      Simples SPA que lista os personagens com opção de visualizar seus respectivos
-                      poderes e opção de favoritar o personagem. No desenvolvimento foi utilizado como
-                      principais tecnologias o React JS, Redux e Material UI.
-                    </p>
-                    <div className={styles.swiperWrapperLinks} >
-                      <a href="https://psychonauts-web.netlify.app/" target="_blank" rel="noopener noreferrer">Abrir Site</a>
-                      <a className={styles.github} href="https://github.com/gabrielripardo/psychonauts"
-                        target="_blank" rel="noopener noreferrer" rel="noopener noreferrer"title="repositório do projeto">
-                        <img src="/assets/icons/github.svg" alt="linkedin logo" width="25"
-                          height="25" />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className={styles.swiperWrapper} >
-                <h3>Pharma Inc</h3>
-                <div className={styles.swiperWrapperDescription} >
-                  <div className={styles.swiperWrapperDemo} >
-                    <img className={styles.projectScreen} src="./img/pharma-inc_screenshot.png"
-                      alt="screenshot do projeto" />
-                  </div>
-                  <div className={styles.projectDescription} >
-                    <p className={styles.textDescription} >
-                      O Pharma Inc lista várias pacientes através da API randomuser.me, disponilizando
-                      filtragem
-                      a partir do gênero e nacionalidade, também é possível abrir os detalhes de cada
-                      paciente a
-                      partir do modal. Nesse projetos foram utilizados o React JS, Redux e Material UI.
-                    </p>
-                    <div className={styles.swiperWrapperLinks} >
-                      <a href="https://pharma-inc-git-main-gabrielripardo.vercel.app/"
-                        target="_blank" rel="noopener noreferrer">Abrir Site</a>
-                      <a className={styles.github} href="https://github.com/gabrielripardo/starwars-app"
-                        target="_blank" rel="noopener noreferrer" rel="noopener noreferrer"title="repositório do projeto">
-                        <img src="/assets/icons/github.svg" alt="linkedin logo" width="25"
-                          height="25" />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className={styles.swiperPagination} ></div>
-
-            <div className={styles.swiperButtonPrev} ></div>
-            <div className={styles.swiperButtonNext} ></div>
-
-            <div className={styles.swiperScrollbar} ></div>
-          </div>
-
-          <ul>
-            <li><a href="https://github.com/gabrielripardo/covid" target="_blank" rel="noopener noreferrer">Analytics Covid-19</a></li>
-            <li><a href="https://github.com/gabrielripardo/references_web/tree/master/instagram-login" target="_blank" rel="noopener noreferrer">Intagram login Clone </a></li>https://62bf079dde934f76ac24f1dc--glittering-churros-427c95.netlify.app/instagram-login/
-          </ul> */}
-        {/* </section> */}
         <section id="contact" className={styles.contact}>
           <h2>Entre em contato comigo</h2>
           <form className={styles.formContact} action="https://formspree.io/f/mqknoovk" method="POST" >

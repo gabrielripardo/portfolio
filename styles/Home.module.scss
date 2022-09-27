@@ -85,6 +85,11 @@
 .projects {
   padding: 96px 48px;
   background-color: $color-low-black;
+
+  .titleSection {
+    text-align: center;
+    margin-bottom: 60px;
+  }
 }
 
 .logo {
@@ -205,7 +210,7 @@
   justify-content: center;
   align-items: center;
   gap: 40px;
-  background-color: $color-low-black;
+  background-color: $color-black;
 }
 
 .jobs {
@@ -300,7 +305,7 @@
 
 .contact {
   row-gap: 40px;
-  background-color: $color-black;
+  background-color: $color-low-black;
 }
 
 .contact,
