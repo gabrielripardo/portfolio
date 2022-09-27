@@ -1,0 +1,10 @@
+@import '../../styles/globals.scss';
+
+.card {
+    background-color: $color-black;
+    padding: 30px;
+
+    .description {
+        margin: 20px 0;
+    }
+}
