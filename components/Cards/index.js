@@ -7,7 +7,7 @@ export default function Cards({ list }) {
         <div className={styles.content}>
             {
                 list.map(item => (
-                    <Card title={item.title} description={item.description} url={item.url} />
+                    <Card key={item.title} title={item.title} description={item.description} url={item.url} />
                 ))
             }
         </div>
