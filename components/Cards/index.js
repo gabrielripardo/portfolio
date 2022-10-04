@@ -6,8 +6,8 @@ export default function Cards({ list }) {
     return (
         <div className={styles.content}>
             {
-                list.map(item => (
-                    <Card key={item.title} title={item.title} description={item.description} url={item.url} />
+                list.map((item, index) => (
+                    <Card key={item.title} index={index} title={item.title} description={item.description} url={item.url} />
                 ))
             }
         </div>
