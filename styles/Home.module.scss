@@ -278,9 +278,20 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-top: rgb(227, 227, 227, 1) solid 1px;
+  // border-top: rgb(227, 227, 227, 1) solid 1px;
   padding: 15px;
   background-color: $color-black;
+  position: relative;
+}
+
+.footer::before {
+  content: '';
+  width: 1120px;
+  height: 1px;
+  position: absolute;
+  top: 0;
+  left: -50;
+  background-color: $color-gray-high;
 }
 
 .footer .networks {
@@ -559,6 +570,10 @@
   }
 
   .main {
+    width: 100%;
+  }
+
+  .footer::before {
     width: 100%;
   }
 }
