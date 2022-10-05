@@ -107,7 +107,7 @@
   .imageLogo {
     width: 70px;
     position: absolute;
-    top: -20px;
+    top: -34px;
   }
 }
 
@@ -291,9 +291,13 @@
   position: relative;
 }
 
+.header,
+.footer::before {
+  width: 1190px;
+}
+
 .footer::before {
   content: '';
-  width: 1120px;
   height: 1px;
   position: absolute;
   top: 0;
