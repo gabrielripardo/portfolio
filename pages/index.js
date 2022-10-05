@@ -49,9 +49,9 @@ export default function Home() {
           <Link href="#jobs">
             <a onClick={goToSection} ><span className={styles.namePage}>Experiências</span></a>
           </Link>
-          {/* <Link href="#projects">
+          <Link href="#projects">
             <a onClick={goToSection}><span className={styles.namePage}>Projetos</span></a>
-          </Link> */}
+          </Link>
           <Link href="#skills">
             <a onClick={goToSection} ><span className={styles.namePage}>Habilidades</span></a>
           </Link>
@@ -137,7 +137,7 @@ export default function Home() {
           </div>
         </section>
         <section id="contact" className={styles.contact}>
-          <h2>Entre em contato comigo</h2>
+          <h2 className={styles.titleSection}>Entre em contato comigo</h2>
           <form className={styles.formContact} action="https://formspree.io/f/mqknoovk" method="POST" >
             <input type="text" name="name" className={styles.inputContact} placeholder="Digite seu nome" />
             <input type="email" name="email" className={styles.inputContact} placeholder="Digite seu e-mail" />

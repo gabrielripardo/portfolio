@@ -82,8 +82,13 @@
   max-width: 1140px;
 }
 
-.projects {
+.projects,
+.skills,
+.contact {
   padding: 96px 48px;
+}
+
+.projects {
   background-color: $color-low-black;
 
   .titleSection {
