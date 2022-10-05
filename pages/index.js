@@ -36,35 +36,37 @@ export default function Home() {
         <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
       </Head>
       <header className={styles.header} style={btnHamburger ? fullscreen : null}>
-        <span className={styles.logo}>
-          <img className={styles.imageLogo} src='./img/logo.png'></img>
-        </span>
+        <nav className={styles.nav}>
+          <span className={styles.logo}>
+            <img className={styles.imageLogo} src='./img/logo.png'></img>
+          </span>
 
-        <input id={styles.menuHamburger} type="checkbox" checked={btnHamburger} readOnly />
+          <input id={styles.menuHamburger} type="checkbox" checked={btnHamburger} readOnly />
 
-        <nav className={styles.navList}>
-          <Link href="#about">
-            <a onClick={goToSection}><span className={styles.namePage}>Sobre mim</span></a>
-          </Link>
-          <Link href="#jobs">
-            <a onClick={goToSection} ><span className={styles.namePage}>Experiências</span></a>
-          </Link>
-          <Link href="#projects">
-            <a onClick={goToSection}><span className={styles.namePage}>Projetos</span></a>
-          </Link>
-          <Link href="#skills">
-            <a onClick={goToSection} ><span className={styles.namePage}>Habilidades</span></a>
-          </Link>
-          <Link href="#contact">
-            <a onClick={goToSection} href=""><span className={styles.namePage}>Contato</span></a>
-          </Link>
+          <nav className={styles.navList}>
+            <Link href="#about">
+              <a onClick={goToSection}><span className={styles.namePage}>Sobre mim</span></a>
+            </Link>
+            <Link href="#jobs">
+              <a onClick={goToSection} ><span className={styles.namePage}>Experiências</span></a>
+            </Link>
+            <Link href="#projects">
+              <a onClick={goToSection}><span className={styles.namePage}>Projetos</span></a>
+            </Link>
+            <Link href="#skills">
+              <a onClick={goToSection} ><span className={styles.namePage}>Habilidades</span></a>
+            </Link>
+            <Link href="#contact">
+              <a onClick={goToSection} href=""><span className={styles.namePage}>Contato</span></a>
+            </Link>
+          </nav>
+
+          <label id={styles.labelMenu} htmlFor={styles.menuHamgurger}>
+            <div onClick={handleBtnHamburger} className={styles.menuBtn}>
+              <span className={styles.hamburger}></span>
+            </div>
+          </label>
         </nav>
-
-        <label id={styles.labelMenu} htmlFor={styles.menuHamgurger}>
-          <div onClick={handleBtnHamburger} className={styles.menuBtn}>
-            <span className={styles.hamburger}></span>
-          </div>
-        </label>
       </header>
 
       <main className={styles.main}>
