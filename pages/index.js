@@ -143,7 +143,7 @@ export default function Home() {
             <input type="email" name="email" className={styles.inputContact} placeholder="Digite seu e-mail" />
             <textarea name="message" id={styles.message} cols="30" rows="10" className={styles.inputContact}
               placeholder="Digite sua mensagem"></textarea>
-            <input type="submit" value="Enviar" className={styles.btnDefault + styles.btnDefault} />
+            <input type="submit" value="Enviar" className={styles.btnDefault} />
           </form>
         </section>
       </main>
