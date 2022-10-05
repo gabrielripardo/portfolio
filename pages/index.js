@@ -37,7 +37,7 @@ export default function Home() {
       </Head>
       <header className={styles.header} style={btnHamburger ? fullscreen : null}>
         <span className={styles.logo}>
-          Portfólio
+          <img className={styles.imageLogo} src='./img/logo.png'></img>
         </span>
 
         <input id={styles.menuHamburger} type="checkbox" checked={btnHamburger} readOnly />

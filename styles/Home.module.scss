@@ -102,6 +102,13 @@
   font-size: large;
   font-family: 'pacfontregular';
   margin-left: 10px;
+  position: relative;
+
+  .imageLogo {
+    width: 70px;
+    position: absolute;
+    top: -20px;
+  }
 }
 
 .navList {
