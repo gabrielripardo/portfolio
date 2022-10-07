@@ -10,8 +10,7 @@ export default function Jobs({ list }) {
         handleJob(firstElement)
     }, [])
 
-    const handleJob = (cur) => {
-        console.log('# selected job');
+    const handleJob = (cur) => {        
         setJob(cur)
     }
 

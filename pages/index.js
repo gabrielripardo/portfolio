@@ -13,16 +13,11 @@ const fullscreen = {
 }
 
 export default function Home() {
-  const [btnHamburger, setBtnHamburger] = useState(false)
-
-  const goToSection = () => {
-    console.log('# indo para session');
-  }
+  const [btnHamburger, setBtnHamburger] = useState(false)  
 
   const handleBtnHamburger = () => {
     setBtnHamburger(!btnHamburger)
   }
-  console.log('# listJobs ', typeof jobsList);
 
   return (
     <div className={styles.content}>
@@ -45,19 +40,19 @@ export default function Home() {
 
           <nav className={styles.navList}>
             <Link href="#about">
-              <a onClick={goToSection}><span className={styles.namePage}>Sobre mim</span></a>
+              <a><span className={styles.namePage}>Sobre mim</span></a>
             </Link>
             <Link href="#jobs">
-              <a onClick={goToSection} ><span className={styles.namePage}>Experiências</span></a>
+              <a><span className={styles.namePage}>Experiências</span></a>
             </Link>
             <Link href="#projects">
-              <a onClick={goToSection}><span className={styles.namePage}>Projetos</span></a>
+              <a><span className={styles.namePage}>Projetos</span></a>
             </Link>
             <Link href="#skills">
-              <a onClick={goToSection} ><span className={styles.namePage}>Habilidades</span></a>
+              <a><span className={styles.namePage}>Habilidades</span></a>
             </Link>
             <Link href="#contact">
-              <a onClick={goToSection} href=""><span className={styles.namePage}>Contato</span></a>
+              <a><span className={styles.namePage}>Contato</span></a>
             </Link>
           </nav>
 
