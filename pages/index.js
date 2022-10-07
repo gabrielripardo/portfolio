@@ -31,40 +31,42 @@ export default function Home() {
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Gabriel | Portólio</title>
-        <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" href='https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500&display=swap' />
         <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
       </Head>
       <header className={styles.header} style={btnHamburger ? fullscreen : null}>
-        <span className={styles.logo}>
-          Portfólio
-        </span>
+        <nav className={styles.nav}>
+          <span className={styles.logo}>
+            <img className={styles.imageLogo} src='./img/logo.png'></img>
+          </span>
 
-        <input id={styles.menuHamburger} type="checkbox" checked={btnHamburger} readOnly />
+          <input id={styles.menuHamburger} type="checkbox" checked={btnHamburger} readOnly />
 
-        <nav className={styles.navList}>
-          <Link href="#about">
-            <a onClick={goToSection}><span className={styles.namePage}>Sobre mim</span></a>
-          </Link>
-          <Link href="#jobs">
-            <a onClick={goToSection} ><span className={styles.namePage}>Experiências</span></a>
-          </Link>
-          {/* <Link href="#projects">
-            <a onClick={goToSection}><span className={styles.namePage}>Projetos</span></a>
-          </Link> */}
-          <Link href="#skills">
-            <a onClick={goToSection} ><span className={styles.namePage}>Habilidades</span></a>
-          </Link>
-          <Link href="#contact">
-            <a onClick={goToSection} href=""><span className={styles.namePage}>Contato</span></a>
-          </Link>
+          <nav className={styles.navList}>
+            <Link href="#about">
+              <a onClick={goToSection}><span className={styles.namePage}>Sobre mim</span></a>
+            </Link>
+            <Link href="#jobs">
+              <a onClick={goToSection} ><span className={styles.namePage}>Experiências</span></a>
+            </Link>
+            <Link href="#projects">
+              <a onClick={goToSection}><span className={styles.namePage}>Projetos</span></a>
+            </Link>
+            <Link href="#skills">
+              <a onClick={goToSection} ><span className={styles.namePage}>Habilidades</span></a>
+            </Link>
+            <Link href="#contact">
+              <a onClick={goToSection} href=""><span className={styles.namePage}>Contato</span></a>
+            </Link>
+          </nav>
+
+          <label id={styles.labelMenu} htmlFor={styles.menuHamgurger}>
+            <div onClick={handleBtnHamburger} className={styles.menuBtn}>
+              <span className={styles.hamburger}></span>
+            </div>
+          </label>
         </nav>
-
-        <label id={styles.labelMenu} htmlFor={styles.menuHamgurger}>
-          <div onClick={handleBtnHamburger} className={styles.menuBtn}>
-            <span className={styles.hamburger}></span>
-          </div>
-        </label>
       </header>
 
       <main className={styles.main}>
@@ -137,13 +139,13 @@ export default function Home() {
           </div>
         </section>
         <section id="contact" className={styles.contact}>
-          <h2>Entre em contato comigo</h2>
+          <h2 className={styles.titleSection}>Entre em contato comigo</h2>
           <form className={styles.formContact} action="https://formspree.io/f/mqknoovk" method="POST" >
             <input type="text" name="name" className={styles.inputContact} placeholder="Digite seu nome" />
             <input type="email" name="email" className={styles.inputContact} placeholder="Digite seu e-mail" />
             <textarea name="message" id={styles.message} cols="30" rows="10" className={styles.inputContact}
               placeholder="Digite sua mensagem"></textarea>
-            <input type="submit" value="Enviar" className={styles.btnDefault + styles.btnDefault} />
+            <input type="submit" value="Enviar" className={styles.btnDefault} />
           </form>
         </section>
       </main>

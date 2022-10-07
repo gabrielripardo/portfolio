@@ -21,20 +21,25 @@
 
 .header {
   height: 80px;
+  display: flex;
+  justify-content: center;
   position: fixed;
   top: 0;
   left: 50%;
   transform: translate(-50%);
   z-index: 1;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 25px 15px;
   transition: all .5s ease;
   /* border-bottom: rgb(227, 227, 227, 1) solid 1px; */
   box-shadow: rgba(0, 0, 0, 0.16) -0.4px .1px 4px;
   background-color: rgba(10, 10, 25, 0.7);
   backdrop-filter: blur(24px);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 15px 25px 0;
 }
 
 .main,
@@ -82,8 +87,13 @@
   max-width: 1140px;
 }
 
-.projects {
+.projects,
+.skills,
+.contact {
   padding: 96px 48px;
+}
+
+.projects {
   background-color: $color-low-black;
 
   .titleSection {
@@ -93,10 +103,14 @@
 }
 
 .logo {
-  font-weight: 100;
-  font-size: large;
-  font-family: 'pacfontregular';
-  margin-left: 10px;
+  position: relative;
+
+  .imageLogo {
+    width: 70px;
+    position: absolute;
+    top: -34px;
+    left: -10px;
+  }
 }
 
 .navList {
@@ -126,7 +140,7 @@
   display: block;
   width: 100%;
   height: 100%;
-  background-color: #000;
+  background-color: $color-default;
   transform-origin: 0 bottom 0;
   transform: scaleY(0);
   transition: .4s ease-out;
@@ -173,6 +187,10 @@
 
 .aboutMe {
   padding: 96px 48px;
+
+  .titleSection {
+    padding-bottom: 30px;
+  }
 
   .description {
     color: $color-gray-medium;
@@ -273,9 +291,24 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-top: rgb(227, 227, 227, 1) solid 1px;
+  // border-top: rgb(227, 227, 227, 1) solid 1px;
   padding: 15px;
   background-color: $color-black;
+  position: relative;
+}
+
+.nav,
+.footer::before {
+  width: 1140px;
+}
+
+.footer::before {
+  content: '';
+  height: 1px;
+  position: absolute;
+  top: 0;
+  left: -50;
+  background-color: $color-gray-high;
 }
 
 .footer .networks {
@@ -549,11 +582,20 @@
     transition: all .5s ease;
   }
 
-  .header {
+  .nav {
     align-items: flex-start;
   }
 
+  .logo {
+    top: 14px;
+    left: 50px;
+  }
+
   .main {
+    width: 100%;
+  }
+
+  .footer::before {
     width: 100%;
   }
 }
