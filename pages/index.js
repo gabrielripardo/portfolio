@@ -13,16 +13,11 @@ const fullscreen = {
 }
 
 export default function Home() {
-  const [btnHamburger, setBtnHamburger] = useState(false)
-
-  const goToSection = () => {
-    console.log('# indo para session');
-  }
+  const [btnHamburger, setBtnHamburger] = useState(false)  
 
   const handleBtnHamburger = () => {
     setBtnHamburger(!btnHamburger)
   }
-  console.log('# listJobs ', typeof jobsList);
 
   return (
     <div className={styles.content}>
