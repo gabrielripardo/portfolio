@@ -17,10 +17,16 @@
         .title {
             padding: 22px;
             font-size: large;
+            border-left: 3px solid $color-black;
+        }
+
+        .title:not(.titleActive):hover{
+            color:  $color-default;
         }
 
         .titleActive {
-            border-left: 2px solid $color-default;
+            border-left: 3px solid $color-default;
+            cursor: default;
         }
 
     }
