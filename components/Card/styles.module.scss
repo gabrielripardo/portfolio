@@ -1,0 +1,22 @@
+@import '../../styles/globals.scss';
+
+.card {
+    background-color: $color-black;
+    padding: 30px;
+
+    .description {
+        margin: 20px 0;
+    }
+}
+
+.colorGreen {
+    border: 1px solid $color-green;
+}
+
+.colorRed {
+    border: 1px solid $color-red;
+}
+
+.colorBlue {
+    border: 1px solid $color-default;
+}

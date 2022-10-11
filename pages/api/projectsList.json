@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Urna Eletrônica",
+        "description": "Esse projeto apresenta a interface da urna eletrônica brasileira e possibilita o usuário digitar ou clicar nos números referente ao candidato, clicar no botão confirmar e ter o voto computado.",
+        "url": "https://urnaeletronicabrasil.netlify.app/"
+    },
+    {
+        "title": "Loja de Relógios",
+        "description": "Simples e-commerce com uma página com cards contendo a foto do relógio, nome e modelo, preço, e botão para comprar com hover animado.",
+        "url": "https://vitrios-front-end-challenge.vercel.app/"
+    },
+    {
+        "title": "Mata Mosquito",
+        "description": "Game desenvolvido com html, css e javascript puro que tem como objetivo capturar o maior número possível de moscas utilizando o click do mouse em 30 segundos. Possui três níveis de dificuldades e ranking de todas as pontuações.",
+        "url": "https://matamosquitogamejs.netlify.app/"
+    },
+    {
+        "title": "Pharma Inc",
+        "description": "Mini sistema web que utiliza a API externa para realizar diversos filtros com React JS.",
+        "url": "https://pharma-inc-git-main-gabrielripardo.vercel.app/"
+    }
+]

@@ -1,0 +1,71 @@
+@import '../../styles/globals.scss';
+
+.container {
+    width: 100%;
+    display: flex;
+    gap: 40px;
+    margin-top: 20px;
+
+    .options {
+        width: 278px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: 10px;
+        background-color: $color-low-black;
+        cursor: pointer;
+
+        .title {
+            padding: 22px;
+            font-size: large;
+            border-left: 3px solid $color-black;
+        }
+
+        .title:not(.titleActive):hover{
+            color:  $color-default;
+        }
+
+        .titleActive {
+            border-left: 3px solid $color-default;
+            cursor: default;
+        }
+
+    }
+
+    .details {
+        width: 823px;
+        padding: 10px;
+        font-size: 18px;
+        color: $color-gray-medium;
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+
+            .role {
+                font-size: 24px;
+                color: $color-gray;
+            }
+        }
+
+        .name {
+            color: $color-default;
+            margin: 34px 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .container {
+        flex-direction: column;
+
+        .options {
+
+            min-width: 100%;
+
+        }
+
+        .details {
+            width: 100%;
+        }
+    }
+}

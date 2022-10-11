@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Conselho Federal de Medicina - CFM",
+        "role": "Estagiário Desenvolvedor Web",
+        "description": "Desenvolvimento fullstack de sistemas web com PHP, Jquery, Javascript e Vue JS.",
+        "period": "Jul 2019 - Jun 2020"
+    },
+    {
+        "name": "Instituto Brasília de Tecnologia e Inovação - IBTI",
+        "role": "Desenvolvedor Front-end",
+        "description": "Desenvolvimento de Plataforma web para gerenciamento de dispositivos IoT com React JS e Material UI.",
+        "period": "Jul 2021 - Ago 2021"
+    },
+    {
+        "name": "Gebit",
+        "role": "Desenvolvedor Front-end",
+        "description": "Desenvolvimento web com Vue JS, React js e Next JS. Desenvolvimento mobile, utilizando Ionic com Angular.",
+        "period": "Ago 2021 - Mar 2022"
+    },
+    {
+        "name": "Smart Nx",
+        "role": "Desenvolvedor Front-end",
+        "description": "Desenvolvimento de sistema web para centralização de serviços de atendimento ao cliente, utilizando React JS e Ant Design.",
+        "period": "Mar 2022 - Jun 2022"
+    },
+    {
+        "name": "Fertile",
+        "role": "Desenvolvedor Front-end",
+        "description": "Atuação na manutenção de app híbrido com Ionic e Angular e desenvolvimento de sistema web com Vue JS.",
+        "period": "Jul 2022 - Atual"
+    }
+]
