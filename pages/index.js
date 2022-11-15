@@ -5,8 +5,10 @@ import Link from 'next/link'
 import Jobs from '../components/Jobs'
 import jobsList from '../pages/api/jobsList.json'
 import projectsList from '../pages/api/projectsList.json'
-import Card from '../components/Card'
 import Cards from '../components/Cards'
+import Input from '../components/Input'
+import TextArea from '../components/TextArea'
+import { Envelope, ChatCentered, IdentificationBadge  } from "phosphor-react";
 
 const fullscreen = {
   height: '100%'
@@ -136,10 +138,15 @@ export default function Home() {
         <section id="contact" className={styles.contact}>
           <h2 className={styles.titleSection}>Entre em contato comigo</h2>
           <form className={styles.formContact} action="https://formspree.io/f/mqknoovk" method="POST" >
-            <input type="text" name="name" className={styles.inputContact} placeholder="Digite seu nome" />
-            <input type="email" name="email" className={styles.inputContact} placeholder="Digite seu e-mail" />
-            <textarea name="message" id={styles.message} cols="30" rows="10" className={styles.inputContact}
-              placeholder="Digite sua mensagem"></textarea>
+            <Input placeholder="Digite seu nome" name="name" type="text">
+              <IdentificationBadge />
+            </Input>
+            <Input placeholder="Digite seu email" name="email" type="email">
+              <Envelope/>
+            </Input>            
+            <TextArea placeholder="Digite sua mensagem" name="message" cols="30" rows="10">
+              <ChatCentered />
+            </TextArea>            
             <input type="submit" value="Enviar" className={styles.btnDefault} />
           </form>
         </section>
