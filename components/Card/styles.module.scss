@@ -1,6 +1,9 @@
 @import '../../styles/globals.scss';
 
 .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: $color-black;
     padding: 30px;
 

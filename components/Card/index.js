@@ -12,9 +12,11 @@ export default function Card({ title, description, url, index }) {
 
     return (
         <div className={styles.card + ' ' + applyBorder()}>
-            <h3>{title}</h3>
-            <p className={styles.description}>{description}</p>
-            <a href={url}>Visualizar</a>
+            <section>
+                <h3>{title}</h3>
+                <p className={styles.description}>{description}</p>
+            </section>
+            <a href={url} target="_blank" rel="noopener noreferrer">Visualizar</a>
         </div>
     )
 }

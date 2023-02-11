@@ -1,17 +1,18 @@
 [
     {
         "title": "Urna Eletrônica",
-        "description": "Esse projeto apresenta a interface da urna eletrônica brasileira e possibilita o usuário digitar ou clicar nos números referente ao candidato, clicar no botão confirmar e ter o voto computado.",
+        "description": "App da Urna eletrônica brasileira, que possibilita o usuário votar no candidato após inserir os números e depois ver o ranking de votação.",
         "url": "https://urnaeletronicabrasil.netlify.app/"
     },
     {
-        "title": "Calculadora React",
-        "description": "Calculadora com design moderno extraído com opção de tema dark e light.",
-        "url": "https://calculator-react-gabrielripardo.vercel.app/"
-    },
-    {
         "title": "Mata Mosquito",
-        "description": "Game desenvolvido com html, css e javascript puro que tem como objetivo capturar o maior número possível de moscas utilizando o click do mouse em 30 segundos. Possui três níveis de dificuldades e ranking de todas as pontuações.",
+        "description": "Game aonde o objetivo é capturar o maior número possível de moscas a partir do click. Possui três níveis de dificuldades e ranking de todas as pontuações.",
         "url": "https://matamosquitogamejs.netlify.app/"
     },
+    {
+        "title": "Calculadora React",
+        "description": "Calculadora com design moderno com opção de tema dark e light.",
+        "url": "https://calculator-react-gabrielripardo.vercel.app/"
+    }
 ]
+
