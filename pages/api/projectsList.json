@@ -1,18 +1,30 @@
 [
     {
         "title": "Urna Eletrônica",
-        "description": "App da Urna eletrônica brasileira, que possibilita o usuário votar no candidato após inserir os números e depois ver o ranking de votação.",
-        "url": "https://urnaeletronicabrasil.netlify.app/"
+        "description": "App da Urna eletrônica brasileira, que possibilita o usuário votar no candidato após inserir os números e depois ver o ranking de votação.",        
+        "projectLinks": {
+            "repository": "https://github.com/gabrielripardo/urna-eletronica",
+            "deploy": "https://urnaeletronicabrasil.netlify.app/",
+            "prototype": ""
+        }
     },
     {
         "title": "Mata Mosquito",
-        "description": "Game aonde o objetivo é capturar o maior número possível de moscas a partir do click. Possui três níveis de dificuldades e ranking de todas as pontuações.",
-        "url": "https://matamosquitogamejs.netlify.app/"
+        "description": "Game aonde o objetivo é capturar o maior número possível de moscas a partir do click. Possui três níveis de dificuldades e ranking de todas as pontuações.",        
+        "projectLinks": {
+            "repository": "https://github.com/gabrielripardo/game-mosquito",
+            "deploy": "https://matamosquitogamejs.netlify.app/",
+            "prototype": ""
+        }
     },
     {
         "title": "Calculadora React",
-        "description": "Calculadora com design moderno com opção de tema dark e light.",
-        "url": "https://calculator-react-gabrielripardo.vercel.app/"
+        "description": "Calculadora com design moderno com opção de escolha de tema dark ou light a qual é salvo no browser.",        
+        "projectLinks": {
+            "repository": "https://github.com/gabrielripardo/calculator-react",
+            "deploy": "https://calculator-react-gabrielripardo.vercel.app/",
+            "prototype": "https://www.figma.com/file/rmYqov1n6QWMhImsb2I76F/Calculator-App-Ui-Design-Download-Free-(Community)?node-id=70%3A420&t=icWBmptrxk2EtZhy-1"
+        }
     }
 ]
 

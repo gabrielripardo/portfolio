@@ -7,7 +7,7 @@ export default function Cards({ list }) {
         <div className={styles.content}>
             {
                 list.map((item, index) => (
-                    <Card key={item.title} index={index} title={item.title} description={item.description} url={item.url} />
+                    <Card key={item.title} index={index} title={item.title} description={item.description} projectLinks={item.projectLinks} />
                 ))
             }
         </div>

@@ -23,3 +23,29 @@
 .colorBlue {
     border: 1px solid $color-default;
 }
+
+.projectLinks{
+    display: flex;
+    gap: 16px;
+    position: absolute;
+    right: 0;
+    top: -10px;
+
+    .github, .figma {
+        width: 36px;
+        height: 36px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+    
+    .github {
+        background-color: #a52a2ad4;
+    }
+
+    .figma {
+        background-color: #6969695c;
+    }
+}
