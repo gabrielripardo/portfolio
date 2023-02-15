@@ -31,7 +31,7 @@
     right: 0;
     top: -10px;
 
-    .github, .figma {
+    .deploy, .github, .figma {
         width: 36px;
         height: 36px;
         display: flex;
@@ -40,6 +40,10 @@
         border-radius: 6px;
     }
     
+    .deploy {
+        background-color: #faebd7e6;
+    }
+
     .github {
         background-color: #a52a2ad4;
     }

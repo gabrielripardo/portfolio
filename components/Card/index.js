@@ -16,6 +16,13 @@ export default function Card({ title, description, projectTechnologies, projectL
                 <h3>{title}</h3>
                 <div className={styles.projectLinks}>
                     {
+                        projectLinks.deploy !== "" && (
+                            <a className={styles.deploy} title="Visualizar" href={projectLinks.deploy} target="_blank" rel="noopener noreferrer">
+                                <img src="/assets/icons/view-icon.svg" alt="view logo" width="22" height="22" />
+                            </a>                            
+                        )
+                    }
+                    {
                         projectLinks.prototype !== "" && (
                             <a className={styles.figma} title="Protótipo Figma" href={projectLinks.prototype} target="_blank" rel="noopener noreferrer">
                                 <img src="/assets/icons/figma.svg" alt="linkedin logo" width="16" height="16" />
@@ -32,16 +39,15 @@ export default function Card({ title, description, projectTechnologies, projectL
                 </div>
                 <p className={styles.description}>{description}</p>
             </section>
-                <div className={styles.projectTechnologies}>                    
-                    {
-                        projectTechnologies.map(tech => (
-                            <div className={styles.techonologieLogo} key={tech}>
-                                <img src={"/assets/icons/technologies/"+tech.filename} alt={tech.name} width={tech.width} height={tech.height} />
-                            </div>
-                        ))
-                    }
-                </div>
-            <a href={projectLinks.deploy} target="_blank" rel="noopener noreferrer">Visualizar</a>
+            <div className={styles.projectTechnologies}>                    
+                {
+                    projectTechnologies.map(tech => (
+                        <div className={styles.techonologieLogo} key={tech.name}>
+                            <img src={"/assets/icons/technologies/"+tech.filename} alt={tech.name} width={tech.width} height={tech.height} />
+                        </div>
+                    ))
+                }
+            </div>            
         </div>
     )
 }
