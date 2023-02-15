@@ -39,9 +39,17 @@
         align-items: center;
         border-radius: 6px;
     }
+
+    .deploy:hover, .github:hover{
+        background-color: #00a3ff66;
+    }
+
+    .figma:hover:hover{
+        background-color: #00a3ff66;
+    }
     
     .deploy {
-        background-color: #faebd7e6;
+        background-color: #6e707ed4;
     }
 
     .github {

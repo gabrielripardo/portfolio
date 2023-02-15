@@ -18,7 +18,7 @@ export default function Card({ title, description, projectTechnologies, projectL
                     {
                         projectLinks.deploy !== "" && (
                             <a className={styles.deploy} title="Visualizar" href={projectLinks.deploy} target="_blank" rel="noopener noreferrer">
-                                <img src="/assets/icons/view-icon.svg" alt="view logo" width="22" height="22" />
+                                <img src="/assets/icons/view-icon_.svg" alt="view logo" width="22" height="22" />
                             </a>                            
                         )
                     }
@@ -43,7 +43,7 @@ export default function Card({ title, description, projectTechnologies, projectL
                 {
                     projectTechnologies.map(tech => (
                         <div className={styles.techonologieLogo} key={tech.name}>
-                            <img src={"/assets/icons/technologies/"+tech.filename} alt={tech.name} width={tech.width} height={tech.height} />
+                            <img src={"/assets/icons/technologies/"+tech.filename} alt={tech.name} title={tech.name} width={tech.width} height={tech.height} />
                         </div>
                     ))
                 }
