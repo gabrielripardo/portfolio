@@ -37,8 +37,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        border-bottom-left-radius: 8px;
-        border-top-right-radius: 8px;
+        border-radius: 6px;
     }
     
     .github {
@@ -47,5 +46,15 @@
 
     .figma {
         background-color: #6969695c;
+    }
+}
+
+.projectTechnologies{
+    display: flex;
+    gap: 10px;
+
+    .techonologieLogo{
+        display: flex;
+        align-items: center;
     }
 }

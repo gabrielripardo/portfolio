@@ -1,6 +1,6 @@
 import styles from './styles.module.scss'
 
-export default function Card({ title, description, projectLinks, index }) {
+export default function Card({ title, description, projectTechnologies, projectLinks, index }) {
 
     const applyBorder = () => {
         switch (index) {
@@ -32,6 +32,15 @@ export default function Card({ title, description, projectLinks, index }) {
                 </div>
                 <p className={styles.description}>{description}</p>
             </section>
+                <div className={styles.projectTechnologies}>                    
+                    {
+                        projectTechnologies.map(tech => (
+                            <div className={styles.techonologieLogo} key={tech}>
+                                <img src={"/assets/icons/technologies/"+tech.filename} alt={tech.name} width={tech.width} height={tech.height} />
+                            </div>
+                        ))
+                    }
+                </div>
             <a href={projectLinks.deploy} target="_blank" rel="noopener noreferrer">Visualizar</a>
         </div>
     )
