@@ -5,12 +5,56 @@
     flex-direction: column;
     justify-content: space-between;
     background-color: $color-black;
-    padding: 30px;
+    padding: 20px 26px;
 
+    
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 8px;
+        
+        .projectLinks{
+            display: flex;
+            gap: 16px; 
+            margin-bottom: 10px;
+        
+            .deploy, .github, .figma {
+                width: 36px;
+                height: 36px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 6px;
+            }
+        
+            .deploy:hover, .github:hover{
+                background-color: #00a3ff66;
+            }
+        
+            .figma:hover:hover{
+                background-color: #00a3ff66;
+            }
+            
+            .deploy {
+                background-color: #6e707ed4;
+            }
+        
+            .github {
+                background-color: #a52a2ad4;
+            }
+        
+            .figma {
+                background-color: #6969695c;
+            }
+        }
+    }
     .description {
-        margin: 20px 0;
+        margin-bottom: 20px;
     }
 }
+
 
 .colorGreen {
     border: 1px solid $color-green;
@@ -22,43 +66,6 @@
 
 .colorBlue {
     border: 1px solid $color-default;
-}
-
-.projectLinks{
-    display: flex;
-    gap: 16px;
-    position: absolute;
-    right: 0;
-    top: -10px;
-
-    .deploy, .github, .figma {
-        width: 36px;
-        height: 36px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 6px;
-    }
-
-    .deploy:hover, .github:hover{
-        background-color: #00a3ff66;
-    }
-
-    .figma:hover:hover{
-        background-color: #00a3ff66;
-    }
-    
-    .deploy {
-        background-color: #6e707ed4;
-    }
-
-    .github {
-        background-color: #a52a2ad4;
-    }
-
-    .figma {
-        background-color: #6969695c;
-    }
 }
 
 .projectTechnologies{

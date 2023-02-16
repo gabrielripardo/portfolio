@@ -12,8 +12,8 @@ export default function Card({ title, description, projectTechnologies, projectL
 
     return (
         <div className={styles.card + ' ' + applyBorder()}>            
-            <section>
-                <h3>{title}</h3>
+            <section className={styles.header}>
+                <h3 className={styles.title}>{title}</h3>
                 <div className={styles.projectLinks}>
                     {
                         projectLinks.deploy !== "" && (
@@ -37,8 +37,8 @@ export default function Card({ title, description, projectTechnologies, projectL
                         )
                     }
                 </div>
-                <p className={styles.description}>{description}</p>
             </section>
+            <p className={styles.description}>{description}</p>
             <div className={styles.projectTechnologies}>                    
                 {
                     projectTechnologies.map(tech => (
