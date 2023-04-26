@@ -88,7 +88,7 @@ export default function Home() {
           <div className={styles.gridLayout}>
             <h2 className={styles.titleSection} >Sobre mim</h2>
             <p className={styles.description}>
-              Sempre querendo descobrir como as coisas funcionavam, costuvama me pergutar
+              Sempre querendo descobrir como as coisas funcionavam, costumava me pergutar
               &quot;como aquele site é feito&quot;, &quot;aquele app faz algo simples, quanto tempo leva pra fazer&quot;.
               Foram esses tipos de perguntas que me levaram a entrar na área de desenvolvimento e
               depois começar a colocar em prática tudo o que foi adquirido através de aulas, livros, bootcamps.
