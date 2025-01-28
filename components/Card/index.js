@@ -4,9 +4,30 @@ export default function Card({ title, description, projectTechnologies, projectL
 
     const applyBorder = () => {
         switch (index) {
-            case 0: return styles.colorGreen;
-            case 1: return styles.colorRed;
-            case 2: return styles.colorBlue;
+          case 0:
+            return styles.colorOrange;
+          case 1:
+            return styles.colorRed;
+          case 2:
+            return styles.colorBlue;
+          case 3:
+            return styles.colorGreen;
+          case 4:
+            return styles.colorOrange;
+          case 5:
+            return styles.colorRed;
+          case 6:
+            return styles.colorBlue;
+          case 7:
+            return styles.colorGreen;
+          case 8:
+            return styles.colorOrange;
+          case 9:
+            return styles.colorRed;
+          case 10:
+            return styles.colorBlue;
+          case 11:
+            return styles.colorGreen;
         }
     }
 
