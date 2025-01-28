@@ -48,7 +48,7 @@ export default function Home() {
       >
         <nav className={styles.nav}>
           <span className={styles.logo}>
-            <img className={styles.imageLogo} src="./img/logo.png"></img>
+            <img className={styles.imageLogo} src="./img/profile-ln.png"></img>
           </span>
 
           <input
@@ -100,7 +100,7 @@ export default function Home() {
             <div className={styles.contentIntroduce}>
               <div className={styles.resume}>
                 <h1 className={styles.titleSection}>
-                  Olá, sou o<span className={styles.name}>Gabriel Ripardo</span>
+                  Olá, sou o<span className={styles.name}>Gabriel Sena</span>
                   <span className={styles.office}>Desenvolvedor Front-end</span>
                 </h1>
                 <a className={styles.btnDefault} href="#contact">
@@ -110,7 +110,7 @@ export default function Home() {
               <div className={styles.avatar}>
                 <img
                   className={styles.avatarImage}
-                  src="./assets/avatar-gabriel.png"
+                  src="./img/profile-ln.png"
                   alt="avatar do Gabriel"
                 />
               </div>
@@ -244,7 +244,7 @@ export default function Home() {
           </a>
         </div>
         <div className={styles.textFooter}>
-          Copyright &copy; {getCurrentYear()} Gabriel Ripardo de Sena
+          Copyright &copy; {getCurrentYear()} Gabriel Sena
         </div>
       </footer>
     </div>
