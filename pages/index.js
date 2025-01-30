@@ -125,7 +125,7 @@ export default function Home() {
             <p className={styles.description}>
               Com 4 anos de experiência no universo do desenvolvimento
               front-end, transformo ideias em interfaces modernas e funcionais.
-              Especialista em criar experiências interativas, domina frameworks
+              Especialista em criar experiências interativas, domino frameworks
               como React e Vue, aliando design elegante a desempenho impecável.
               Sou apaixonado por detalhes, minha missão é conectar usuários a
               soluções intuitivas e visuais.
