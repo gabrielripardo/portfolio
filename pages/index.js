@@ -9,6 +9,7 @@ import Cards from "../components/Cards";
 import Input from "../components/Input";
 import TextArea from "../components/TextArea";
 import { Envelope, ChatCentered, IdentificationBadge } from "phosphor-react";
+import ButtonDefault from "../components/ButtonDefault";
 
 const fullscreen = {
   height: "100%",
@@ -103,9 +104,9 @@ export default function Home() {
                   Olá, sou o<span className={styles.name}>Gabriel Sena</span>
                   <span className={styles.office}>Desenvolvedor Front-end</span>
                 </h1>
-                <a className={styles.btnDefault} href="#contact">
+                <ButtonDefault href="#contact">
                   Contate-me
-                </a>
+                </ButtonDefault>
               </div>
               <div className={styles.avatar}>
                 <img
@@ -125,8 +126,8 @@ export default function Home() {
               front-end, transformo ideias em interfaces modernas e funcionais.
               Especialista em criar experiências interativas, domina frameworks
               como React e Vue, aliando design elegante a desempenho impecável.
-              Sou apaixonado por detalhes, minha missão é conectar usuários a soluções
-              intuitivas e visuais.
+              Sou apaixonado por detalhes, minha missão é conectar usuários a
+              soluções intuitivas e visuais.
             </p>
           </div>
         </section>
@@ -217,7 +218,9 @@ export default function Home() {
             >
               <ChatCentered />
             </TextArea>
-            <input type="submit" value="Enviar" className={styles.btnDefault} />
+            <ButtonDefault type="submit">
+              Enviar
+            </ButtonDefault>            
           </form>
         </section>
       </main>
