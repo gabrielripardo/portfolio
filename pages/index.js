@@ -10,6 +10,7 @@ import Input from "../components/Input";
 import TextArea from "../components/TextArea";
 import { Envelope, ChatCentered, IdentificationBadge } from "phosphor-react";
 import ButtonDefault from "../components/ButtonDefault";
+import { BlinkingCursor } from "../components/BlinkingCursor";
 
 const fullscreen = {
   height: "100%",
@@ -102,11 +103,11 @@ export default function Home() {
               <div className={styles.resume}>
                 <h1 className={styles.titleSection}>
                   Olá, sou o<span className={styles.name}>Gabriel Sena</span>
-                  <span className={styles.office}>Desenvolvedor Front-end</span>
+                  <span className={styles.office}>
+                    Desenvolvedor Front-end <BlinkingCursor />
+                  </span>
                 </h1>
-                <ButtonDefault href="#contact">
-                  Contate-me
-                </ButtonDefault>
+                <ButtonDefault href="#contact">Contate-me</ButtonDefault>
               </div>
               <div className={styles.avatar}>
                 <img
@@ -218,9 +219,7 @@ export default function Home() {
             >
               <ChatCentered />
             </TextArea>
-            <ButtonDefault type="submit">
-              Enviar
-            </ButtonDefault>            
+            <ButtonDefault type="submit">Enviar</ButtonDefault>
           </form>
         </section>
       </main>
